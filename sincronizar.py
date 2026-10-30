@@ -11,7 +11,7 @@ from pathlib import Path
 
 AQUI = Path(__file__).parent
 DONOS_PC = ["saida/dias", "saida/garimpo.json", "saida/cupons_manuais.json", "saida/historico.json", "saida/segmind.json",
-            "saida/resultados.json", "saida/telegram_config.json", "widget/divulgacao.json"]
+            "saida/resultados.json", "saida/telegram_config.json", "saida/convites.json", "widget/divulgacao.json"]
 
 
 def git(*args, ok=False):
