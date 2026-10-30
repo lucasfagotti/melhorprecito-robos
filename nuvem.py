@@ -26,7 +26,8 @@ PAGES = "https://lucasfagotti.github.io/melhorprecito-robos/midia"
 DONOS_NUVEM = ["saida/telegram_postados.json", "saida/telegram_fila.json", "saida/telegram_stats.json", "saida/cupons.json",
                "saida/instagram.json", "saida/instagram_stories.json", "saida/instagram_comentarios.json",
                "saida/ads_melhorprecito.json", "saida/ads_melhorprecito_numeros.json", "saida/ig_token_renovado.json",
-               "saida/cards/destaques.json", "saida/nuvem.json", "saida/telegram_entradas.json", "docs/midia"]
+               "saida/cards/destaques.json", "saida/nuvem.json", "saida/telegram_entradas.json", "saida/ads_telegram.json",
+               "saida/ads_telegram_numeros.json", "docs/midia"]
 
 
 def git(*args, ok=False):
@@ -104,7 +105,7 @@ def turno(minutos=28):
         de_tempo_em_tempo("fila", 20, lambda: telegram_fila.tick(api))
         de_tempo_em_tempo("instagram", 900, lambda: (instagram_bot.precisa_renovar() and instagram_bot.renovar(),
                                                      instagram_bot.postar(), stories_ig.postar()))
-        de_tempo_em_tempo("anuncio", 1800, ads_mp.monitorar)
+        de_tempo_em_tempo("anuncio", 1800, lambda: (ads_mp.monitorar(), ads_mp.monitorar_telegram()))
         de_tempo_em_tempo("cupons-blog", 1800, cupons.vigiar_no_horario)
         time.sleep(15)
 

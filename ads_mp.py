@@ -70,6 +70,39 @@ def monitorar():
                                   ensure_ascii=False, indent=1), encoding="utf-8")
 
 
+TG_ESTADO = AQUI / "saida" / "ads_telegram.json"
+TG_NUMEROS = AQUI / "saida" / "ads_telegram_numeros.json"
+MAX_CUSTO_MEMBRO = 3.0  # R$ por membro novo no canal (contado pelo link de convite "anuncio")
+
+
+def monitorar_telegram():
+    """Anúncio do canal: custo por membro = gasto ÷ entradas pelo link "anuncio" (entradas.py)."""
+    if not TG_ESTADO.exists():
+        return
+    est = json.loads(TG_ESTADO.read_text(encoding="utf-8"))
+    status = api("GET", est["campanha"], fields="effective_status")["effective_status"]
+    total = (api("GET", f"{est['campanha']}/insights", fields="spend,inline_link_clicks", date_preset="maximum").get("data") or [{}])[0]
+    mes = (api("GET", f"{est['campanha']}/insights", fields="spend", date_preset="this_month").get("data") or [{}])[0]
+    gasto, gasto_mes, cliques = float(total.get("spend", 0)), float(mes.get("spend", 0)), int(total.get("inline_link_clicks", 0))
+    ent = AQUI / "saida" / "telegram_entradas.json"
+    dias = json.loads(ent.read_text(encoding="utf-8")).get("dias", {}) if ent.exists() else {}
+    membros = sum(d.get("anuncio", 0) for d in dias.values())
+    custo = gasto / membros if membros else None
+    motivo = None
+    if status == "ACTIVE" and gasto_mes >= LIMITE_MES:
+        motivo = f"limite do mês (R$ {LIMITE_MES:.0f}) atingido"
+    elif status == "ACTIVE" and gasto >= MIN_GASTO_PARA_JULGAR and (custo is None or custo > MAX_CUSTO_MEMBRO):
+        motivo = f"membro saindo caro (R$ {custo:.2f})" if custo else "R$ 20 gastos sem membro novo"
+    if motivo:
+        api("POST", est["campanha"], status="PAUSED")
+        status, est["pausado_por"] = "PAUSED", motivo
+        TG_ESTADO.write_text(json.dumps(est, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"anúncio do Telegram pausado: {motivo}", flush=True)
+    TG_NUMEROS.write_text(json.dumps({"quando": date.today().isoformat(), "status": status, "gasto": gasto, "gasto_mes": gasto_mes,
+                                      "cliques": cliques, "membros": membros, "custo_por_membro": custo,
+                                      "pausado_por": est.get("pausado_por")}, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 if __name__ == "__main__":
     monitorar()
     print(NUMEROS.read_text(encoding="utf-8"))
