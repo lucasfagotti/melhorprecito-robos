@@ -1,0 +1,22 @@
+# LISTA BRANCA: o repositório é público. Só sobe o que está liberado aqui; .env e chaves NUNCA sobem.
+/*
+!/.gitignore
+!/.github/
+!/*.py
+!/fontes/
+!/docs/
+!/widget/
+/widget/estado.json
+!/saida/
+/saida/*
+!/saida/*.json
+!/saida/dias/
+/saida/dias/*/*
+!/saida/dias/*/plano.json
+!/saida/cards/
+/saida/cards/*
+!/saida/cards/destaques.json
+*.env
+.env*
+*.log
+__pycache__/

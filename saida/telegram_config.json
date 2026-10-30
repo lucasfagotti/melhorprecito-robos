@@ -1,0 +1,13 @@
+{
+ "intervalo_normal": 10,
+ "intervalo_campanha": 3,
+ "inicio": "07:30",
+ "fim": "23:30",
+ "repetir_apos_dias": 3,
+ "datas_campanha": [
+  "2026-11-11",
+  "2026-11-27",
+  "2026-11-28",
+  "2026-12-12"
+ ]
+}

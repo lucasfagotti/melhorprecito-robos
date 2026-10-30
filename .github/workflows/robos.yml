@@ -1,0 +1,39 @@
+# Turno dos robôs do Melhor Precito (Telegram, Instagram, comentários, cupons, anúncio). Ver nuvem.py.
+name: robos
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # um turno de ~28 min a cada 30 min
+  workflow_dispatch:
+concurrency:
+  group: robos               # nunca dois turnos ao mesmo tempo (o próximo espera)
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  turno:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TZ: America/Sao_Paulo  # os horários dos robôs são de Brasília (o servidor é UTC)
+      SHOPEE_APP_ID: ${{ secrets.SHOPEE_APP_ID }}
+      SHOPEE_SECRET: ${{ secrets.SHOPEE_SECRET }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      META_ADS_TOKEN: ${{ secrets.META_ADS_TOKEN }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: .github/workflows/robos.yml
+      - run: pip install requests pillow python-dotenv
+      - run: |
+          git config user.name lucasfagotti
+          git config user.email lucasfagotti@users.noreply.github.com
+      - run: python nuvem.py 27

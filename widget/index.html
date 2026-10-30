@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Central de Afiliados</title>
+<style>
+  :root {
+    --bg: #0F1623; --card: #172133; --card2: #1D2940; --line: #243149;
+    --text: #F1F5F9; --muted: #8A97AD; --dim: #5B6880;
+    --coral: #EE4D2D; --coral2: #FF7A59; --green: #22C55E; --amber: #F5B83D; --red: #EF4444; --blue: #60A5FA; --tg: #2AABEE;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; background: var(--bg); color: var(--text); overflow: hidden;
+    font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  body { display: flex; flex-direction: column; }
+  button { font: inherit; }
+
+  header { display: flex; align-items: center; gap: 12px; padding: 14px 16px 10px; }
+  .logo { width: 38px; height: 38px; border-radius: 11px; flex: none; background: linear-gradient(135deg, var(--coral), var(--coral2));
+    display: grid; place-items: center; font-weight: 800; font-size: 17px; box-shadow: 0 2px 12px #EE4D2D55; }
+  .marca b { display: block; font-size: 15px; font-weight: 650; }
+  .marca small { font-size: 11px; color: var(--muted); }
+  .kpis { flex: 1; display: flex; justify-content: flex-end; gap: 8px; }
+  .kpi { background: var(--card); border-radius: 10px; padding: 6px 12px; text-align: right; min-width: 110px; }
+  .kpi span { display: block; font-size: 9.5px; letter-spacing: .8px; color: var(--muted); font-weight: 700; text-transform: uppercase; }
+  .kpi b { font-size: 15px; font-weight: 700; }
+  .acoes { display: flex; gap: 2px; }
+  .btn { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; color: var(--muted); cursor: pointer; border: 0; background: none; }
+  .btn:hover { background: var(--card2); color: var(--text); } .btn.on { color: var(--coral2); }
+  .btn svg { width: 15px; height: 15px; }
+
+  nav { display: flex; gap: 4px; padding: 0 16px; border-bottom: 1px solid var(--line); }
+  nav div { padding: 9px 14px 10px; font-size: 12.5px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; }
+  nav div:hover { color: var(--text); }
+  nav div.ativa { color: var(--text); border-color: var(--coral); }
+  nav .badge { background: var(--coral); color: #fff; border-radius: 99px; font-size: 10px; padding: 1px 6px; margin-left: 4px; }
+
+  main { flex: 1; overflow-y: auto; padding: 14px 16px 18px; }
+  main::-webkit-scrollbar { width: 8px; } main::-webkit-scrollbar-thumb { background: var(--line); border-radius: 8px; }
+  .aba { display: none; } .aba.ativa { display: block; }
+
+  .barra { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .barra .info { flex: 1; font-size: 12px; color: var(--muted); }
+  select, input[type=search] { background: var(--card); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; font: inherit; font-size: 12.5px; }
+  .b { background: var(--card2); color: var(--text); border: 1px solid var(--line); border-radius: 8px; padding: 6px 11px; font-size: 12px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+  .b:hover { border-color: var(--muted); }
+  .b.prim { background: var(--coral); border-color: var(--coral); }
+  .b.tg { background: var(--tg); border-color: var(--tg); }
+  .b.ok { background: #14532D; border-color: var(--green); color: #BBF7D0; }
+  .b:disabled { opacity: .5; cursor: default; }
+
+  .progresso { height: 6px; background: var(--card); border-radius: 6px; overflow: hidden; margin-bottom: 14px; }
+  .progresso div { height: 100%; background: linear-gradient(90deg, var(--coral), var(--coral2)); transition: width .4s; }
+
+  .post { display: grid; grid-template-columns: 62px 64px 1fr auto; gap: 12px; align-items: center; background: var(--card);
+    border-radius: 12px; padding: 10px 12px; margin-bottom: 8px; border-left: 3px solid var(--line); }
+  .post.proximo { border-left-color: var(--coral); } .post.atrasado { border-left-color: var(--amber); } .post.feito { border-left-color: var(--green); opacity: .72; }
+  .hora b { font-size: 17px; display: block; } .hora span { font-size: 10px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+  .post.proximo .hora span { color: var(--coral2); } .post.atrasado .hora span { color: var(--amber); } .post.feito .hora span { color: var(--green); }
+  .thumb { width: 64px; height: 64px; border-radius: 9px; object-fit: cover; background: var(--card2); cursor: pointer; }
+  .meio b { font-size: 13.5px; display: block; margin-bottom: 3px; }
+  .meio .linha { font-size: 11.5px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+  .meio .linha i { font-style: normal; color: var(--text); }
+  .tag { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 99px; background: var(--card2); color: var(--muted); }
+  .tag.baixa { color: #86EFAC; background: #14532D88; } .tag.média { color: #FCD34D; background: #78350F88; } .tag.alta { color: #FCA5A5; background: #7F1D1D88; }
+  .botoes { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; max-width: 380px; }
+  .aviso { font-size: 11px; margin-top: 4px; } .aviso.ok { color: var(--green); } .aviso.mal { color: var(--amber); }
+
+  .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+  .prod { background: var(--card); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+  .prod img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--card2); }
+  .prod .corpo { padding: 9px 10px 10px; display: flex; flex-direction: column; gap: 5px; flex: 1; }
+  .prod .nome { font-size: 12px; line-height: 1.3; height: 31px; overflow: hidden; }
+  .prod .ganho { font-size: 16px; font-weight: 750; color: var(--green); }
+  .prod .det { font-size: 11px; color: var(--muted); }
+  .prod .rod { display: flex; justify-content: space-between; align-items: center; margin-top: auto; }
+
+  .videos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .vid { background: var(--card); border-radius: 12px; overflow: hidden; }
+  .vid video { width: 100%; aspect-ratio: 9/16; background: #000; display: block; }
+  .vid div { padding: 8px 10px; font-size: 12px; display: flex; justify-content: space-between; gap: 6px; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
+  .card { background: var(--card); border-radius: 12px; padding: 14px; }
+  .card span { font-size: 10px; letter-spacing: .8px; color: var(--muted); font-weight: 700; text-transform: uppercase; }
+  .card b { display: block; font-size: 24px; margin-top: 4px; }
+  .card small { color: var(--muted); font-size: 11.5px; }
+  h3 { font-size: 13px; margin: 16px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; }
+  .barras { display: flex; align-items: flex-end; gap: 4px; height: 120px; background: var(--card); border-radius: 12px; padding: 12px; }
+  .barras div { flex: 1; background: var(--coral); border-radius: 4px 4px 0 0; min-height: 2px; position: relative; }
+  .barras div.tg { background: var(--tg); }
+  .barras div:hover::after { content: attr(data-t); position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #000; padding: 3px 6px; border-radius: 5px; font-size: 10.5px; white-space: nowrap; }
+  .lista { background: var(--card); border-radius: 12px; }
+  .lista div { display: flex; justify-content: space-between; gap: 10px; padding: 9px 12px; font-size: 12.5px; border-bottom: 1px solid var(--line); }
+  .lista div:last-child { border: 0; }
+  .vazio { text-align: center; color: var(--muted); font-size: 13px; padding: 40px 20px; background: var(--card); border-radius: 12px; line-height: 1.6; }
+  .tarefa { display: flex; gap: 10px; align-items: flex-start; background: var(--card); border-radius: 10px; padding: 10px 12px; margin-bottom: 6px; font-size: 12.5px; cursor: pointer; }
+  .tarefa input { margin-top: 2px; accent-color: var(--coral); width: 15px; height: 15px; flex: none; }
+  .tarefa.feito span { text-decoration: line-through; color: var(--dim); }
+  .quem { font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 99px; margin-left: auto; flex: none; }
+  .quem.Lucas { background: #7C2D1288; color: #FDBA74; } .quem.Claude { background: #3B076488; color: #D8B4FE; } .quem.Robô { background: #0C4A6E88; color: #7DD3FC; }
+  .nota { font-size: 11.5px; color: var(--muted); background: var(--card); border-radius: 10px; padding: 10px 12px; margin-top: 10px; border-left: 3px solid var(--red); }
+
+  #modal { position: fixed; inset: 0; background: #000C; display: none; align-items: center; justify-content: center; z-index: 9; }
+  #modal.on { display: flex; }
+  #modal video { height: 88vh; border-radius: 12px; }
+  #toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: var(--card2); border: 1px solid var(--line); padding: 8px 14px; border-radius: 10px; font-size: 12.5px; opacity: 0; transition: opacity .25s; pointer-events: none; }
+  #toast.on { opacity: 1; }
+</style>
+</head>
+<body>
+<header class="pywebview-drag-region">
+  <div class="logo">A</div>
+  <div class="marca"><b>Central de Afiliados</b><small id="fabrica">carregando…</small></div>
+  <div class="kpis">
+    <div class="kpi"><span>Shopee Vídeo hoje</span><b id="k-post">–</b></div>
+    <div class="kpi"><span>Telegram</span><b id="k-tg">–</b></div>
+    <div class="kpi"><span>Comissão 7 dias</span><b id="k-com">–</b></div>
+  </div>
+  <div class="acoes">
+    <button class="btn" id="b-fixar" title="Fixar por cima" onclick="fixar()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 17v5M9 3h6l-1 7 4 3H6l4-3z"/></svg></button>
+    <button class="btn" title="Atualizar" onclick="carregar()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg></button>
+    <button class="btn" title="Minimizar" onclick="pywebview.api.minimizar()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/></svg></button>
+    <button class="btn" title="Fechar" onclick="pywebview.api.fechar()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+</header>
+<nav>
+  <div data-aba="hoje" class="ativa">Hoje <span class="badge" id="n-pend"></span></div>
+  <div data-aba="produtos">Produtos</div>
+  <div data-aba="videos">Vídeos</div>
+  <div data-aba="telegram">Telegram</div>
+  <div data-aba="cupons">Cupons <span class="badge" id="n-cup"></span></div>
+  <div data-aba="divulgacao">Divulgação</div>
+  <div data-aba="resultados">Resultados</div>
+</nav>
+<main>
+  <section class="aba ativa" id="aba-hoje">
+    <div class="barra">
+      <select id="dia" onchange="carregar(this.value)"></select>
+      <div class="info" id="hoje-info"></div>
+      <button class="b" onclick="pywebview.api.pasta_celular(D.plano.dia)">Pasta do celular</button>
+      <button class="b prim" onclick="fabrica()">Gerar vídeos de hoje</button>
+    </div>
+    <div class="progresso"><div id="prog" style="width:0"></div></div>
+    <div id="posts"></div>
+  </section>
+
+  <section class="aba" id="aba-produtos">
+    <div class="barra">
+      <input type="search" id="busca" placeholder="Buscar produto…" oninput="produtos()">
+      <select id="cat" onchange="produtos()"></select>
+      <select id="conc" onchange="produtos()"><option value="">Qualquer concorrência</option><option>baixa</option><option>média</option><option>alta</option></select>
+      <select id="ordem" onchange="produtos()"><option value="oportunidade">Melhor oportunidade</option><option value="commission">Maior ganho por venda</option><option value="extra">Maior comissão extra</option><option value="sales">Mais vendidos</option></select>
+      <div class="info" id="prod-info"></div>
+    </div>
+    <div class="grade" id="grade"></div>
+  </section>
+
+  <section class="aba" id="aba-videos">
+    <div class="barra"><div class="info" id="vid-info"></div></div>
+    <div class="videos" id="videos"></div>
+  </section>
+
+  <section class="aba" id="aba-telegram">
+    <div id="tg"></div>
+  </section>
+
+  <section class="aba" id="aba-cupons">
+    <h3 style="margin-top:0">Adicionar cupom que você viu no app</h3>
+    <div class="barra">
+      <input type="search" id="c-cod" placeholder="Código (ex.: SHOPEE20)" style="width:170px">
+      <input type="search" id="c-desc" placeholder="Desconto (ex.: R$ 20 OFF)" style="width:170px">
+      <input type="search" id="c-regra" placeholder="Regra (ex.: compras acima de R$ 99)" style="flex:1;min-width:200px">
+      <input type="date" id="c-val" style="background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:5px 8px;color-scheme:dark">
+      <button class="b prim" onclick="addCupom()">Adicionar</button>
+    </div>
+    <div class="barra"><div class="info">O robô também lê o blog oficial da Shopee 2x por dia (8h e 18h) e posta sozinho os cupons que achar. Adicionar aqui também posta na hora.</div>
+      <button class="b" onclick="vigiar(this)">Procurar no blog agora</button></div>
+    <div id="cup"></div>
+  </section>
+
+  <section class="aba" id="aba-divulgacao">
+    <div id="div"></div>
+  </section>
+
+  <section class="aba" id="aba-resultados">
+    <div class="barra"><div class="info" id="res-info"></div><button class="b prim" onclick="resultados(true)">Atualizar da Shopee</button></div>
+    <div id="res"></div>
+  </section>
+</main>
+<div id="modal" onclick="fecharVideo(event)"><video id="player" controls></video></div>
+<div id="toast"></div>
+
+<script>
+let D = null;
+const brl = v => "R$ " + Number(v || 0).toFixed(2).replace(".", ",");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const $ = id => document.getElementById(id);
+
+function toast(t) { const e = $("toast"); e.textContent = t; e.classList.add("on"); clearTimeout(e._t); e._t = setTimeout(() => e.classList.remove("on"), 2200); }
+
+document.querySelectorAll("nav div").forEach(n => n.onclick = () => {
+  document.querySelectorAll("nav div, .aba").forEach(e => e.classList.remove("ativa"));
+  n.classList.add("ativa"); $("aba-" + n.dataset.aba).classList.add("ativa");
+});
+
+async function carregar(dia) {
+  D = await pywebview.api.dados(dia || (D && $("dia").value) || null);
+  $("dia").innerHTML = [...new Set([D.hoje, ...D.dias])].map(d => `<option ${d === D.plano.dia ? "selected" : ""}>${d}</option>`).join("");
+  $("fabrica").textContent = D.fabrica.quando ? `Fábrica: ${D.fabrica.status.slice(0, 60)} (${D.fabrica.quando})` : "Fábrica: ainda não rodou";
+  $("b-fixar").classList.toggle("on", !!D.estado.topo);
+  hoje(); produtos(); videos(); telegram(); cupons(); divulgacao(); resultados(false);
+}
+
+function cupons() {
+  const cs = D.cupons || [], hojeIso = D.hoje;
+  const pend = cs.filter(c => c.status === "pendente");
+  const ativos = cs.filter(c => c.status === "postado" && (!c.validade || c.validade >= hojeIso));
+  const velhos = cs.filter(c => c.status === "descartado" || (c.status === "postado" && c.validade && c.validade < hojeIso));
+  $("n-cup").textContent = pend.length || ""; $("n-cup").style.display = pend.length ? "" : "none";
+  const linha = (c, botoes) => `<div><span><b>${esc(c.codigo)}</b> · ${esc([c.desconto, c.regra].filter(Boolean).join(" · "))}
+      <small style="color:var(--muted)"> ${c.validade ? "até " + c.validade.split("-").reverse().slice(0, 2).join("/") : "sem validade"} · ${c.fonte === "manual" ? "manual" : "blog Shopee"}</small></span><span>${botoes}</span></div>`;
+  $("cup").innerHTML = `${pend.length ? `<h3>Não foram postados (erro no envio)</h3><div class="lista">${pend.map(c => linha(c,
+      `<button class="b tg" onclick="postarCupom(${c.id}, this)">Tentar de novo</button> <button class="b" onclick="pywebview.api.cupom_descartar(${c.id}).then(() => carregar(D.plano.dia))">Descartar</button>`)).join("")}</div>` : ""}
+    <h3>Ativos (vão junto nas ofertas do Telegram)</h3><div class="lista">${ativos.map(c => linha(c, `<span style="color:var(--green)">postado ${c.postado || ""}</span>`)).join("") || "<div>Nenhum cupom ativo: as ofertas mostram só \"confira os cupons no carrinho\".</div>"}</div>
+    ${velhos.length ? `<h3>Vencidos ou descartados</h3><div class="lista">${velhos.slice(-10).map(c => linha(c, "")).join("")}</div>` : ""}`;
+}
+async function addCupom() {
+  const cod = $("c-cod").value.trim(); if (!cod) { toast("Coloque o código"); return; }
+  const r = await pywebview.api.cupom_add(cod, $("c-desc").value.trim(), $("c-regra").value.trim(), $("c-val").value);
+  ["c-cod", "c-desc", "c-regra", "c-val"].forEach(i => $(i).value = ""); toast(r.ok ? "Cupom postado no canal" : "Falhou: " + r.msg); carregar(D.plano.dia);
+}
+async function postarCupom(id, b) { b.disabled = true; const r = await pywebview.api.cupom_postar(id); toast(r.ok ? "Cupom postado no canal" : "Falhou: " + r.msg); carregar(D.plano.dia); }
+async function vigiar(b) { b.disabled = true; b.textContent = "Procurando…"; const r = await pywebview.api.cupom_vigiar(); toast(r.ok ? `${r.novos} cupom(ns) novo(s) no blog` : "Falhou: " + r.msg); carregar(D.plano.dia); }
+
+function situacao(i, proximo) {
+  if (i.shopee_postado) return ["feito", "postado " + (i.shopee_hora || "")];
+  if (D.plano.dia !== D.hoje) return ["", D.plano.dia < D.hoje ? "não postado" : "agendado"];
+  if (i.horario <= D.agora) return ["atrasado", "atrasado"];
+  if (i === proximo) return ["proximo", "próximo"];
+  return ["", "às " + i.horario];
+}
+
+function hoje() {
+  const it = D.plano.itens, feitos = it.filter(i => i.shopee_postado).length;
+  $("k-post").textContent = `${feitos}/${it.length || 10}`;
+  $("prog").style.width = (it.length ? feitos / it.length * 100 : 0) + "%";
+  const pend = it.filter(i => !i.shopee_postado && D.plano.dia === D.hoje && i.horario <= D.agora).length;
+  $("n-pend").textContent = pend || ""; $("n-pend").style.display = pend ? "" : "none";
+  const ganho = it.reduce((s, i) => s + i.ganho, 0);
+  $("hoje-info").textContent = it.length ? `${it.length} vídeos · ${feitos} postados · se cada um vender 1x: ${brl(ganho)}` : "";
+  if (!it.length) { $("posts").innerHTML = `<div class="vazio">Nenhum vídeo para este dia ainda.<br>A fábrica roda sozinha de madrugada; ou clique em <b>Gerar vídeos de hoje</b>.</div>`; return; }
+  const proximo = it.find(i => !i.shopee_postado && i.horario > D.agora);
+  $("posts").innerHTML = it.map(i => {
+    const [cls, txt] = situacao(i, proximo);
+    const pc = i.preco_check ? `<div class="aviso ${i.preco_check.ok ? "ok" : "mal"}">${i.preco_check.ok ? "✓" : "⚠"} ${esc(i.preco_check.msg)} (${i.preco_check.quando})</div>` : "";
+    const tg = i.telegram_postado ? `<span class="tag" style="color:#7DD3FC">Telegram ${i.telegram_hora || "✓"}</span>` : "";
+    return `<div class="post ${cls}">
+      <div class="hora"><b>${i.horario}</b><span>${txt}</span></div>
+      <img class="thumb" src="${D.base}${i.foto_url}" onclick="verVideo('${i.video_url}')" title="Ver vídeo">
+      <div class="meio"><b>${esc(i.curto || i.produto.slice(0, 50))}</b>
+        <div class="linha"><span>Marcar: <i>${esc(i.loja)}</i></span><span><i>${brl(i.preco)}</i></span>
+          <span>ganha <i style="color:var(--green)">${brl(i.ganho)}</i> (${i.comissao_pct}%)</span>
+          <span class="tag ${i.concorrencia}">concorrência ${i.concorrencia}</span>${i.clipes_ia ? `<span class="tag">IA ${i.clipes_ia} clipes</span>` : ""}${tg}</div>${pc}</div>
+      <div class="botoes">
+        ${i.aprovado_ig ? `<span class="tag" style="color:#86EFAC">👍 vai pro Instagram</span>` :
+          `<button class="b" title="Aprovar: o robô posta no Instagram" onclick="avaliar(${i.n}, true)">👍</button>
+           <button class="b" title="Reprovar: some da pasta e de tudo" onclick="avaliar(${i.n}, false)">👎</button>`}
+        <button class="b" onclick="verVideo('${i.video_url}')">▶ Vídeo</button>
+        <button class="b" onclick="copiar(${i.n})">Copiar legenda</button>
+        <button class="b" onclick="conferir(${i.n}, this)">Conferir preço</button>
+        <button class="b ${i.shopee_postado ? "ok" : "prim"}" onclick="postei(${i.n}, ${!i.shopee_postado})">${i.shopee_postado ? "✓ Postado" : "Postei"}</button>
+      </div></div>`;
+  }).join("");
+}
+
+function verVideo(u) { const p = $("player"); p.src = D.base + u; $("modal").classList.add("on"); p.play(); }
+function fecharVideo(e) { if (e.target.id === "modal") { $("player").pause(); $("modal").classList.remove("on"); } }
+async function copiar(n) {
+  const i = D.plano.itens.find(x => x.n === n);
+  await navigator.clipboard.writeText(`${i.legenda}\n\n${i.hashtags}`); toast("Legenda copiada");
+}
+async function conferir(n, b) {
+  b.disabled = true; b.textContent = "Conferindo…";
+  try { const r = await pywebview.api.conferir_preco(D.plano.dia, n); toast(r.msg); } catch (e) { toast("Erro ao conferir"); }
+  carregar(D.plano.dia);
+}
+async function avaliar(n, bom) {
+  if (!bom && !confirm("Reprovar este vídeo? Ele some da pasta do celular.")) return;
+  await pywebview.api.avaliar(D.plano.dia, n, bom); toast(bom ? "Aprovado: vai pro Instagram no próximo horário" : "Vídeo reprovado"); carregar(D.plano.dia);
+}
+async function postei(n, v) { await pywebview.api.marcar(D.plano.dia, n, "shopee_postado", v); carregar(D.plano.dia); }
+async function fabrica() { await pywebview.api.rodar_fabrica(); toast("Fábrica iniciada: os vídeos aparecem aqui conforme ficam prontos"); }
+
+function produtos() {
+  const ps = D.garimpo.produtos || [];
+  const cats = [...new Set(ps.map(p => p.palavra))].sort();
+  const sel = $("cat").value;
+  $("cat").innerHTML = `<option value="">Todas as categorias</option>` + cats.map(c => `<option ${c === sel ? "selected" : ""}>${c}</option>`).join("");
+  const q = $("busca").value.toLowerCase(), conc = $("conc").value, ord = $("ordem").value;
+  let l = ps.filter(p => (!sel || p.palavra === sel) && (!conc || p.concorrencia === conc) && (!q || p.productName.toLowerCase().includes(q)));
+  const chave = { oportunidade: p => p.oportunidade, commission: p => +p.commission, extra: p => +p.sellerCommissionRate, sales: p => +p.sales }[ord];
+  l.sort((a, b) => chave(b) - chave(a));
+  $("prod-info").textContent = `${l.length} de ${ps.length} · garimpo de ${D.garimpo.quando || "–"}`;
+  $("grade").innerHTML = l.slice(0, 120).map(p => `<div class="prod">
+    <img loading="lazy" src="${esc(p.imageUrl)}">
+    <div class="corpo"><div class="nome">${esc(p.productName)}</div>
+      <div class="ganho">${brl(p.commission)} <small style="font-size:11px;color:var(--muted);font-weight:500">por venda</small></div>
+      <div class="det">${brl(p.price)} · ${Math.round(p.commissionRate * 100)}%${+p.sellerCommissionRate >= .05 ? ` (extra ${Math.round(p.sellerCommissionRate * 100)}%)` : ""} · ${p.sales} vendas · ${p.ratingStar}★</div>
+      <div class="rod"><span class="tag ${p.concorrencia}">${p.concorrencia}</span>
+        <button class="b" onclick="pywebview.api.abrir('${esc(p.offerLink)}')">Ver na Shopee</button></div></div></div>`).join("")
+    || `<div class="vazio">Nenhum produto. A fábrica atualiza o garimpo toda madrugada.</div>`;
+}
+
+function videos() {
+  const it = D.plano.itens;
+  $("vid-info").textContent = it.length ? `${it.length} vídeos de ${D.plano.dia} · também estão no OneDrive › Shopee Videos › ${D.plano.dia}` : "";
+  $("videos").innerHTML = it.map(i => `<div class="vid"><video preload="none" poster="${D.base}${i.foto_url}" src="${D.base}${i.video_url}" controls></video>
+    <div><span>${i.horario} · ${esc(i.curto)}</span><span style="color:var(--green)">${brl(i.ganho)}</span></div></div>`).join("")
+    || `<div class="vazio">Nenhum vídeo neste dia.</div>`;
+}
+
+function telegram() {
+  const t = D.telegram, datas = Object.keys(t.membros).sort(), atual = datas.length ? t.membros[datas.at(-1)] : null;
+  const semana = datas.length > 7 ? atual - t.membros[datas.at(-8)] : (datas.length ? atual - t.membros[datas[0]] : 0);
+  $("k-tg").textContent = atual == null ? "–" : `${atual} membros`;
+  if (!t.configurado) {
+    $("tg").innerHTML = `<div class="vazio"><b>Canal ainda não conectado.</b><br>Siga a fase 1 da aba <b>Divulgação</b>: criar o canal, criar o bot no @BotFather,<br>colocar o bot como administrador e colar TELEGRAM_BOT_TOKEN e TELEGRAM_CANAL no .env.<br><br><button class="b tg" onclick="testeTg()">Testar conexão</button></div>`;
+    return;
+  }
+  const postados = D.plano.itens.filter(i => i.telegram_postado).length;
+  const max = Math.max(1, ...datas.map(d => t.membros[d]));
+  $("tg").innerHTML = `<div class="barra"><div class="info">Canal ${esc(t.canal)}</div>
+      <button class="b" onclick="testeTg()">Testar conexão</button>
+      <button class="b tg" onclick="pywebview.api.abrir('https://t.me/${esc(t.canal.replace("@", ""))}')">Abrir canal</button></div>
+    <div class="cards">
+      <div class="card"><span>Membros</span><b>${atual ?? "–"}</b><small>${semana >= 0 ? "+" : ""}${semana} nos últimos 7 dias</small></div>
+      <div class="card"><span>Ofertas hoje</span><b>${postados}/${D.plano.itens.length}</b><small>o robô posta no horário de cada vídeo</small></div>
+      <div class="card"><span>Meta de membros</span><b>${atual >= 1000 ? "10.000" : atual >= 100 ? "1.000" : "100"}</b><small>próximo marco</small></div>
+    </div>
+    <h3>Crescimento</h3>
+    <div class="barras">${datas.slice(-30).map(d => `<div class="tg" style="height:${t.membros[d] / max * 100}%" data-t="${d.slice(5)}: ${t.membros[d]}"></div>`).join("") || ""}</div>
+    <h3>Ofertas de ${D.plano.dia}</h3>
+    <div class="lista">${D.plano.itens.map(i => `<div><span>${i.horario} · ${esc(i.curto)}</span>
+      ${i.telegram_postado ? `<span style="color:var(--green)">postado ${i.telegram_hora || ""}</span>` : `<button class="b" onclick="tgAgora(${i.n}, this)">Postar agora</button>`}</div>`).join("") || "<div>Sem ofertas neste dia.</div>"}</div>`;
+}
+async function testeTg() { const r = await pywebview.api.telegram_teste(); toast(r.ok ? r.msg : "Falhou: " + r.msg); carregar(D.plano.dia); }
+async function tgAgora(n, b) { b.disabled = true; const r = await pywebview.api.telegram_agora(D.plano.dia, n); toast(r.ok ? "Postado no Telegram" : "Falhou: " + r.msg); carregar(D.plano.dia); }
+
+function divulgacao() {
+  const ts = D.divulgacao.tarefas || []; let fase = "";
+  $("div").innerHTML = ts.map((t, k) => {
+    const cab = t.fase !== fase ? `<h3>${esc(t.fase)}</h3>` : ""; fase = t.fase;
+    return `${cab}<label class="tarefa ${t.feito ? "feito" : ""}"><input type="checkbox" ${t.feito ? "checked" : ""} onchange="pywebview.api.tarefa(${k}, this.checked).then(() => carregar(D.plano.dia))">
+      <span>${esc(t.texto)}</span><span class="quem ${t.quem}">${t.quem}</span></label>`;
+  }).join("") + (D.divulgacao.nao_fazemos ? `<div class="nota">${esc(D.divulgacao.nao_fazemos)}</div>` : "");
+}
+
+async function resultados(atualizar) {
+  let r = D.resultados;
+  if (atualizar) { $("res-info").textContent = "Buscando na Shopee…"; try { r = await pywebview.api.atualizar_resultados(); D.resultados = r; } catch (e) { toast("Erro ao buscar resultados"); } }
+  $("k-com").textContent = r.total ? brl(r.total["7d"]) : "–";
+  $("res-info").textContent = r.quando ? `Atualizado em ${r.quando} (relatório de conversões da API, últimos 30 dias)` : "Clique em atualizar para buscar suas comissões";
+  if (!r.total) { $("res").innerHTML = `<div class="vazio">Ainda sem dados.</div>`; return; }
+  const dias = Object.keys(r.por_dia).sort(), max = Math.max(1, ...dias.map(d => r.por_dia[d]));
+  $("res").innerHTML = `<div class="cards">
+      <div class="card"><span>Hoje</span><b>${brl(r.total.hoje)}</b><small>${r.pedidos.hoje} pedidos</small></div>
+      <div class="card"><span>7 dias</span><b>${brl(r.total["7d"])}</b><small>${r.pedidos["7d"]} pedidos</small></div>
+      <div class="card"><span>30 dias</span><b>${brl(r.total["30d"])}</b><small>${r.pedidos["30d"]} pedidos</small></div></div>
+    <h3>Comissão por dia</h3>
+    <div class="barras">${dias.map(d => `<div style="height:${r.por_dia[d] / max * 100}%" data-t="${d.slice(5)}: ${brl(r.por_dia[d])}"></div>`).join("") || ""}</div>
+    <h3>Produtos que mais renderam</h3>
+    <div class="lista">${r.top.map(p => `<div><span>${esc(p.nome)}</span><span>${p.qtd}x · <b style="color:var(--green)">${brl(p.comissao)}</b></span></div>`).join("") || "<div>Nenhuma venda ainda: normal nos primeiros dias.</div>"}</div>`;
+}
+
+async function fixar() { const on = await pywebview.api.fixar(); $("b-fixar").classList.toggle("on", on); }
+
+window.addEventListener("pywebviewready", () => { carregar(); setInterval(() => carregar(D && D.plano.dia), 60000); });
+if (window.pywebview && window.pywebview.api) carregar();
+</script>
+</body>
+</html>

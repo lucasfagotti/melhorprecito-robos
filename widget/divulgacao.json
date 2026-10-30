@@ -1,0 +1,83 @@
+{
+ "tarefas": [
+  {
+   "fase": "1. Canal pronto",
+   "quem": "Lucas",
+   "texto": "Criar o canal PÚBLICO com nome buscável (ex.: \"Achadinhos Melhor Preço | Ofertas Shopee\") e um @ curto",
+   "feito": true
+  },
+  {
+   "fase": "1. Canal pronto",
+   "quem": "Lucas",
+   "texto": "Criar o bot no @BotFather e colocar como administrador do canal (com permissão de postar)",
+   "feito": true
+  },
+  {
+   "fase": "1. Canal pronto",
+   "quem": "Lucas",
+   "texto": "Colar TELEGRAM_BOT_TOKEN e TELEGRAM_CANAL no .env e clicar em \"Testar conexão\" na aba Telegram",
+   "feito": true
+  },
+  {
+   "fase": "1. Canal pronto",
+   "quem": "Claude",
+   "texto": "Foto, descrição e mensagem fixada explicando o canal (\"ofertas conferidas todo dia, toque no botão para ver na Shopee\")",
+   "feito": true
+  },
+  {
+   "fase": "1. Canal pronto",
+   "quem": "Robô",
+   "texto": "Publicar 20 a 30 ofertas ANTES de divulgar (o robô posta 10 por dia: 2 a 3 dias)",
+   "feito": false
+  },
+  {
+   "fase": "2. Divulgação grátis",
+   "quem": "Lucas",
+   "texto": "Mandar o link do canal para contatos e grupos de família/amigos (uma vez, sem insistir)",
+   "feito": false
+  },
+  {
+   "fase": "2. Divulgação grátis",
+   "quem": "Lucas",
+   "texto": "Status do WhatsApp: 1 oferta por dia com o link do canal (o vídeo do dia serve)",
+   "feito": false
+  },
+  {
+   "fase": "2. Divulgação grátis",
+   "quem": "Claude",
+   "texto": "Perfil de achadinhos no Instagram e TikTok com os mesmos vídeos e o link do canal na bio (separado da Loja que Lucra)",
+   "feito": false
+  },
+  {
+   "fase": "2. Divulgação grátis",
+   "quem": "Lucas",
+   "texto": "Cadastrar o canal em diretórios de canais do Telegram (ex.: tgstat) com as palavras ofertas, achadinhos, Shopee",
+   "feito": false
+  },
+  {
+   "fase": "2. Divulgação grátis",
+   "quem": "Lucas",
+   "texto": "Trocar divulgação com 2 ou 3 canais de ofertas do mesmo tamanho (um posta o do outro)",
+   "feito": false
+  },
+  {
+   "fase": "3. Anúncio (R$ 150/mês)",
+   "quem": "Claude",
+   "texto": "Página \"Entrar no canal\" com pixel da Meta (o anúncio leva para ela, não direto para o t.me)",
+   "feito": false
+  },
+  {
+   "fase": "3. Anúncio (R$ 150/mês)",
+   "quem": "Claude",
+   "texto": "Campanha R$ 5/dia com 3 vídeos de achadinhos; robô corta anúncio caro e nunca passa de R$ 150 no mês",
+   "feito": false
+  },
+  {
+   "fase": "3. Anúncio (R$ 150/mês)",
+   "quem": "Lucas",
+   "texto": "Aprovar a campanha antes de ativar (gasto de dinheiro só com o seu ok)",
+   "feito": false
+  }
+ ],
+ "nao_fazemos": "Comprar membros, adicionar pessoas em massa ou mandar mensagem não pedida: viola as regras do Telegram, pode derrubar o canal e membro falso não compra."
+}
