@@ -1340,5 +1340,27 @@
    "titulo": "Uso capilar",
    "texto": "Para cabelo"
   }
+ ],
+ "23694205612": [
+  {
+   "emoji": "👕",
+   "titulo": "Conjunto 2 peças",
+   "texto": "Legging e top inclusos"
+  },
+  {
+   "emoji": "🚫",
+   "titulo": "Zero transparência",
+   "texto": "Tecido não transparente"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Uso fitness",
+   "texto": "Ideal para academia"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Modelo feminino",
+   "texto": "Conjunto fitness feminino"
+  }
  ]
 }
