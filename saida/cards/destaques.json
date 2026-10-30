@@ -1736,5 +1736,27 @@
    "titulo": "Térmica",
    "texto": "Mantém a temperatura da bebida"
   }
+ ],
+ "58259049816": [
+  {
+   "emoji": "👖",
+   "titulo": "Kit 2 Calças",
+   "texto": "Duas unidades no pacote"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Cintura Alta",
+   "texto": "Modelagem valoriza a silhueta"
+  },
+  {
+   "emoji": "👜",
+   "titulo": "Com Bolso",
+   "texto": "Praticidade no dia a dia"
+  },
+  {
+   "emoji": "💼",
+   "titulo": "Alfaiataria Premium",
+   "texto": "Elegância para trabalho e eventos"
+  }
  ]
 }
