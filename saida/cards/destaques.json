@@ -1670,5 +1670,27 @@
    "titulo": "Confortável",
    "texto": "Conforto para o dia a dia"
   }
+ ],
+ "23294741602": [
+  {
+   "emoji": "🏃",
+   "titulo": "Corrida e Caminhada",
+   "texto": "ideal para treino e casual"
+  },
+  {
+   "emoji": "🪶",
+   "titulo": "Leve Premium",
+   "texto": "conforto para uso diário"
+  },
+  {
+   "emoji": "💨",
+   "titulo": "Respirável",
+   "texto": "ventilação nos pés"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Academia e Fitness",
+   "texto": "para treino e crossfit"
+  }
  ]
 }
