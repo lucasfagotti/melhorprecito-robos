@@ -1164,5 +1164,27 @@
    "titulo": "Uso Social",
    "texto": "Ideal para ocasiões formais"
   }
+ ],
+ "22899036423": [
+  {
+   "emoji": "👜",
+   "titulo": "Bolsa de Ombro",
+   "texto": "Alça de corrente inclusa"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Acolchoada",
+   "texto": "Estilo casual elegante"
+  },
+  {
+   "emoji": "💼",
+   "titulo": "Para Trabalho",
+   "texto": "Uso no dia a dia"
+  },
+  {
+   "emoji": "🚶",
+   "titulo": "Para Passeio",
+   "texto": "Ideal para sair"
+  }
  ]
 }
