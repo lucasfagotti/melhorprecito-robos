@@ -1428,5 +1428,27 @@
    "titulo": "3 a 6 anos",
    "texto": "Para crianças"
   }
+ ],
+ "22494362004": [
+  {
+   "emoji": "🚗",
+   "titulo": "Kit 48 Carrinhos",
+   "texto": "48 carrinhos de fricção"
+  },
+  {
+   "emoji": "🥫",
+   "titulo": "Lata Metálica",
+   "texto": "embalagem de lata metálica"
+  },
+  {
+   "emoji": "🎨",
+   "titulo": "Coloridos",
+   "texto": "carrinhos em cores variadas"
+  },
+  {
+   "emoji": "🛣️",
+   "titulo": "Caixa Vira Pista",
+   "texto": "container se transforma em pista"
+  }
  ]
 }
