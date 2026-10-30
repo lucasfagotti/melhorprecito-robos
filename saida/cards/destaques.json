@@ -1208,5 +1208,27 @@
    "titulo": "Quantidade",
    "texto": "5 saquinhos e 5 tags"
   }
+ ],
+ "22093525892": [
+  {
+   "emoji": "👖",
+   "titulo": "Jeans",
+   "texto": "Material jeans resistente"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Tamanhos 34 ao 44",
+   "texto": "Do 34 ao 44"
+  },
+  {
+   "emoji": "👜",
+   "titulo": "Bolso lateral",
+   "texto": "Bolso cargo lateral"
+  },
+  {
+   "emoji": "⬆️",
+   "titulo": "Cintura alta",
+   "texto": "Cintura alta modeladora"
+  }
  ]
 }
