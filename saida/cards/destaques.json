@@ -1582,5 +1582,27 @@
    "titulo": "Uso diário",
    "texto": "Ideal para o dia a dia"
   }
+ ],
+ "58268255011": [
+  {
+   "emoji": "🧵",
+   "titulo": "Tricot",
+   "texto": "Material em tricot"
+  },
+  {
+   "emoji": "🌈",
+   "titulo": "Listrado colorido",
+   "texto": "Estampa listrada colorida"
+  },
+  {
+   "emoji": "🎀",
+   "titulo": "Com cordão",
+   "texto": "Cordão de amarração"
+  },
+  {
+   "emoji": "🏖️",
+   "titulo": "Saída de praia",
+   "texto": "Uso como saída de praia"
+  }
  ]
 }
