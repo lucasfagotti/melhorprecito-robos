@@ -1538,5 +1538,27 @@
    "titulo": "Premium",
    "texto": "Acabamento fino e leve"
   }
+ ],
+ "20097973367": [
+  {
+   "emoji": "👚",
+   "titulo": "Manga longa",
+   "texto": "Modelo feminino manga longa"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Listrada",
+   "texto": "Estampa listrada boho"
+  },
+  {
+   "emoji": "🌿",
+   "titulo": "Crepinho",
+   "texto": "Tecido crepinho leve"
+  },
+  {
+   "emoji": "💼",
+   "titulo": "Social e casual",
+   "texto": "Uso social ou casual"
+  }
  ]
 }
