@@ -23,7 +23,11 @@ ESTADO = AQUI / "saida" / "instagram_comentarios.json"
 JANELA = dt.timedelta(days=7)
 GATILHOS = r"\b(EU ?QUERO|QUERO|LINK|ONDE COMPR\w*|QUANTO|PRECO|MANDA)\b"
 PUBLICAS = ["Te mandei no direct! 💌", "Enviado no seu direct 😉", "Corre no direct que mandei o link! 🛒", "Link no seu direct 💛"]
-CANAL = "t.me/melhorprecito"
+# link de convite próprio do Instagram (saida/convites.json): conta no relatório de entradas por origem
+try:
+    CANAL = json.loads((Path(__file__).parent / "saida" / "convites.json").read_text(encoding="utf-8"))["instagram"]
+except Exception:
+    CANAL = "t.me/melhorprecito"
 
 
 def normalizar(t):
