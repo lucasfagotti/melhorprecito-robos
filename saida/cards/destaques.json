@@ -1758,5 +1758,27 @@
    "titulo": "Alfaiataria Premium",
    "texto": "Elegância para trabalho e eventos"
   }
+ ],
+ "22697383155": [
+  {
+   "emoji": "👖",
+   "titulo": "Pantalona",
+   "texto": "Modelo pantalona amplo"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Cintura Alta",
+   "texto": "Cintura alta valoriza silhueta"
+  },
+  {
+   "emoji": "👜",
+   "titulo": "Com Bolso",
+   "texto": "Bolso funcional no modelo"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Tecido Duna",
+   "texto": "Confeccionada em tecido Duna"
+  }
  ]
 }
