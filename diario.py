@@ -443,6 +443,11 @@ def _main():
         print(f"    ok em {time.time() - inicio:.0f}s", flush=True)
 
     onedrive.sincronizar(dia, com_cards=True)
+    try:
+        import sincronizar
+        sincronizar.sincronizar()  # manda o plano novo para os robôs da nuvem
+    except Exception as erro:
+        print(f"sincronização com a nuvem falhou (a tarefa de 5 em 5 min tenta de novo): {erro}", flush=True)
     print(f"DIA PRONTO: {len(plano['itens'])} vídeos", flush=True)
 
 

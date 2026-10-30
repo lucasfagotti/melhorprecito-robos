@@ -15,7 +15,7 @@ sys.path.insert(0, str(AQUI))
 
 acao = sys.argv[1] if len(sys.argv) > 1 else ""
 log = AQUI / "saida" / {"fabrica": "diario.log", "cupons": "cupons.log", "instagram": "instagram.log",
-                             "comentarios": "instagram.log"}.get(acao, "telegram.log")
+                             "comentarios": "instagram.log", "sync": "sync.log"}.get(acao, "telegram.log")
 log.parent.mkdir(exist_ok=True)
 with open(log, "a", encoding="utf-8") as fh, contextlib.redirect_stdout(fh), contextlib.redirect_stderr(fh):
     print(f"--- {datetime.now():%d/%m %H:%M} {acao}", flush=True)
@@ -33,6 +33,9 @@ with open(log, "a", encoding="utf-8") as fh, contextlib.redirect_stdout(fh), con
             stories_ig.postar()
             import ads_mp
             ads_mp.monitorar()  # vigia do anúncio de R$ 6/dia: pausa se passar do mês ou se o seguidor sair caro
+        elif acao == "sync":
+            import sincronizar
+            sincronizar.sincronizar()
         elif acao == "comentarios":
             import comentarios_ig
             comentarios_ig.rodar()
