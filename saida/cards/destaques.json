@@ -1780,5 +1780,27 @@
    "titulo": "Tecido Duna",
    "texto": "Confeccionada em tecido Duna"
   }
+ ],
+ "58255694722": [
+  {
+   "emoji": "🧲",
+   "titulo": "Magnético",
+   "texto": "Peças com encaixe magnético"
+  },
+  {
+   "emoji": "🧱",
+   "titulo": "De Montar",
+   "texto": "Blocos para construir e criar"
+  },
+  {
+   "emoji": "🎓",
+   "titulo": "Educativo",
+   "texto": "Brinquedo infantil educativo"
+  },
+  {
+   "emoji": "🎨",
+   "titulo": "Craft",
+   "texto": "Linha criativa Craft"
+  }
  ]
 }
