@@ -20,7 +20,12 @@ AQUI = Path(__file__).parent
 FEITO = AQUI / "saida" / "entregas.json"
 
 
+DONO = AQUI / "saida" / "telegram_dono.json"  # chat privado do Lucas (anotado no 1º /start)
+
+
 def chat_do_lucas():
+    if DONO.exists():
+        return json.loads(DONO.read_text(encoding="utf-8"))["chat"]
     import subprocess
     subprocess.run(["git", "pull", "-q", "--rebase", "--autostash"], cwd=AQUI, capture_output=True)  # pega o /start registrado
     ent = AQUI / "saida" / "telegram_entradas.json"
