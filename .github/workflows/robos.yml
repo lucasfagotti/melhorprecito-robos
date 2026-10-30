@@ -37,3 +37,10 @@ jobs:
           git config user.name lucasfagotti
           git config user.email lucasfagotti@users.noreply.github.com
       - run: python nuvem.py 27
+      # o agendador do GitHub atrasa ou falha (aconteceu na Loja que Lucra): cada turno chama o próximo.
+      # O cron acima fica de reserva; a "concurrency" garante que nunca rodam dois juntos.
+      - name: chama o próximo turno
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: gh workflow run robos.yml --repo ${{ github.repository }}
