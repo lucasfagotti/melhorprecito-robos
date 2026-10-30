@@ -18,9 +18,16 @@ FORA = {"left", "kicked"}
 
 def contar():
     d = json.loads(ARQ.read_text(encoding="utf-8")) if ARQ.exists() else {"offset": 0, "dias": {}, "saidas": {}}
-    atualizacoes = telegram_bot.tg("getUpdates", offset=d["offset"], timeout=0, allowed_updates=["chat_member"])
+    atualizacoes = telegram_bot.tg("getUpdates", offset=d["offset"], timeout=0, allowed_updates=["chat_member", "message"])
     for u in atualizacoes:
         d["offset"] = u["update_id"] + 1
+        msg = u.get("message") or {}
+        if msg.get("chat", {}).get("type") == "private":
+            # quem mandou /start no privado do bot: o primeiro é o Lucas (recebe os vídeos do dia, ver entrega.py)
+            de = msg.get("from", {})
+            d.setdefault("privados", {}).setdefault(str(msg["chat"]["id"]), {"nome": de.get("first_name", ""),
+                                                                            "usuario": de.get("username", "")})
+            continue
         m = u.get("chat_member")
         if not m:
             continue
