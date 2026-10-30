@@ -90,9 +90,12 @@ class Api:
         self._completar_redes(dia)
         plano = ler(DIAS / dia / "plano.json", {"dia": dia, "itens": []})
         plano["itens"] = [i for i in plano["itens"] if not i.get("descartado")]
+        postados = ler(RAIZ / "saida" / "telegram_postados.json", {})  # quem posta no Telegram é a nuvem
         for i in plano["itens"]:
             i["video_url"] = url_local(i["video"])
             i["foto_url"] = url_local(i["foto"])
+            if str(i["itemId"]) in postados:
+                i["telegram_postado"], i["telegram_hora"] = True, str(postados[str(i["itemId"])])[-5:]
         dias = sorted([d.name for d in DIAS.iterdir() if (d / "plano.json").exists()], reverse=True) if DIAS.exists() else []
         carregar_env()
         stats = ler(RAIZ / "saida" / "telegram_stats.json", {})
@@ -164,6 +167,16 @@ class Api:
                     i["descartado"] = "reprovado no widget"
         gravar(arq, plano)
         onedrive.sincronizar(dia)
+        if bom:  # sobe o vídeo para o link público em segundo plano; o robô da nuvem posta no horário
+            def subir():
+                try:
+                    import instagram_bot
+                    instagram_bot.publicar_aprovado(dia, n)
+                    import sincronizar
+                    sincronizar.sincronizar()
+                except Exception as erro:
+                    print(f"subir vídeo aprovado: {erro}", flush=True)
+            threading.Thread(target=subir, daemon=True).start()
         return True
 
     def tarefa(self, idx, feito):
@@ -210,9 +223,11 @@ class Api:
 
     # ---------- cupons ----------
     def cupom_add(self, codigo, desconto, regra, validade):
+        """Anota o cupom; o robô da nuvem posta no canal em até 5 min (depois da próxima sincronização)."""
         import cupons
-        c = cupons.adicionar(codigo, regra, validade, desconto)
-        return self.cupom_postar(c["id"])
+        cupons.adicionar_manual(codigo, regra, validade, desconto)
+        threading.Thread(target=lambda: __import__("sincronizar").sincronizar(), daemon=True).start()
+        return {"ok": True}
 
     def cupom_postar(self, cid):
         import cupons

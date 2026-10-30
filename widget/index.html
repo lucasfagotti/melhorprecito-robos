@@ -228,9 +228,9 @@ function cupons() {
 async function addCupom() {
   const cod = $("c-cod").value.trim(); if (!cod) { toast("Coloque o código"); return; }
   const r = await pywebview.api.cupom_add(cod, $("c-desc").value.trim(), $("c-regra").value.trim(), $("c-val").value);
-  ["c-cod", "c-desc", "c-regra", "c-val"].forEach(i => $(i).value = ""); toast(r.ok ? "Cupom postado no canal" : "Falhou: " + r.msg); carregar(D.plano.dia);
+  ["c-cod", "c-desc", "c-regra", "c-val"].forEach(i => $(i).value = ""); toast(r.ok ? "Cupom anotado: vai pro canal em até 10 min" : "Falhou: " + r.msg); carregar(D.plano.dia);
 }
-async function postarCupom(id, b) { b.disabled = true; const r = await pywebview.api.cupom_postar(id); toast(r.ok ? "Cupom postado no canal" : "Falhou: " + r.msg); carregar(D.plano.dia); }
+async function postarCupom(id, b) { b.disabled = true; const r = await pywebview.api.cupom_postar(id); toast(r.ok ? "Cupom anotado: vai pro canal em até 10 min" : "Falhou: " + r.msg); carregar(D.plano.dia); }
 async function vigiar(b) { b.disabled = true; b.textContent = "Procurando…"; const r = await pywebview.api.cupom_vigiar(); toast(r.ok ? `${r.novos} cupom(ns) novo(s) no blog` : "Falhou: " + r.msg); carregar(D.plano.dia); }
 
 function situacao(i, proximo) {
@@ -342,7 +342,7 @@ function telegram() {
     <div class="barras">${datas.slice(-30).map(d => `<div class="tg" style="height:${t.membros[d] / max * 100}%" data-t="${d.slice(5)}: ${t.membros[d]}"></div>`).join("") || ""}</div>
     <h3>Ofertas de ${D.plano.dia}</h3>
     <div class="lista">${D.plano.itens.map(i => `<div><span>${i.horario} · ${esc(i.curto)}</span>
-      ${i.telegram_postado ? `<span style="color:var(--green)">postado ${i.telegram_hora || ""}</span>` : `<button class="b" onclick="tgAgora(${i.n}, this)">Postar agora</button>`}</div>`).join("") || "<div>Sem ofertas neste dia.</div>"}</div>`;
+      ${i.telegram_postado ? `<span style="color:var(--green)">postado ${i.telegram_hora || ""}</span>` : `<span style="color:var(--muted)">sai no horário (nuvem)</span>`}</div>`).join("") || "<div>Sem ofertas neste dia.</div>"}</div>`;
 }
 async function testeTg() { const r = await pywebview.api.telegram_teste(); toast(r.ok ? r.msg : "Falhou: " + r.msg); carregar(D.plano.dia); }
 async function tgAgora(n, b) { b.disabled = true; const r = await pywebview.api.telegram_agora(D.plano.dia, n); toast(r.ok ? "Postado no Telegram" : "Falhou: " + r.msg); carregar(D.plano.dia); }
