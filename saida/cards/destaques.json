@@ -1252,5 +1252,27 @@
    "titulo": "Calça Pantalona",
    "texto": "Modelagem pantalona ampla"
   }
+ ],
+ "22892833180": [
+  {
+   "emoji": "🔧",
+   "titulo": "Kit Completo",
+   "texto": "40 ou 46 peças"
+  },
+  {
+   "emoji": "🚗",
+   "titulo": "Uso Automotivo",
+   "texto": "Reparo de carros"
+  },
+  {
+   "emoji": "🧰",
+   "titulo": "Caixa Inclusa",
+   "texto": "Caixa de ferramentas"
+  },
+  {
+   "emoji": "🔩",
+   "titulo": "Chave Catraca",
+   "texto": "Conjunto de chaves"
+  }
  ]
 }
