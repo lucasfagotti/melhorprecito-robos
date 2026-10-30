@@ -1450,5 +1450,27 @@
    "titulo": "Caixa Vira Pista",
    "texto": "container se transforma em pista"
   }
+ ],
+ "23394405366": [
+  {
+   "emoji": "📏",
+   "titulo": "Saia Longa",
+   "texto": "Comprimento longo elegante"
+  },
+  {
+   "emoji": "👗",
+   "titulo": "Plissada",
+   "texto": "Caimento plissado rodado"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Forrada",
+   "texto": "Com forro interno"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Estilo Evangélico",
+   "texto": "Moda chique e recatada"
+  }
  ]
 }
