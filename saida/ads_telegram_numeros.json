@@ -1,9 +1,9 @@
 {
  "quando": "2026-10-31",
  "status": "ACTIVE",
- "gasto": 5.0,
- "gasto_mes": 5.0,
- "cliques": 19,
+ "gasto": 5.19,
+ "gasto_mes": 5.19,
+ "cliques": 20,
  "membros": 0,
  "custo_por_membro": null,
  "pausado_por": null
