@@ -3210,5 +3210,27 @@
    "titulo": "Térmica",
    "texto": "Mantém a temperatura da bebida"
   }
+ ],
+ "23199528877": [
+  {
+   "emoji": "🏃",
+   "titulo": "Para Corrida",
+   "texto": "ideal para corrida e caminhada"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Academia e Fitness",
+   "texto": "perfeito para treino na academia"
+  },
+  {
+   "emoji": "☁️",
+   "titulo": "Macio e Leve",
+   "texto": "confortável e leve no pé"
+  },
+  {
+   "emoji": "👟",
+   "titulo": "Uso Feminino",
+   "texto": "modelo esportivo feminino"
+  }
  ]
 }
