@@ -3122,5 +3122,27 @@
    "titulo": "Uso praia",
    "texto": "Ideal para piscina e praia"
   }
+ ],
+ "58254949260": [
+  {
+   "emoji": "📏",
+   "titulo": "Versão Grande",
+   "texto": "24cm de diâmetro"
+  },
+  {
+   "emoji": "⏱️",
+   "titulo": "Com Temporizador",
+   "texto": "Tempo limitado para jogar"
+  },
+  {
+   "emoji": "🔤",
+   "titulo": "Trava Letras",
+   "texto": "Jogo de palavras rápido"
+  },
+  {
+   "emoji": "🇧🇷",
+   "titulo": "Em Português",
+   "texto": "Instruções no idioma"
+  }
  ]
 }
