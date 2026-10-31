@@ -3562,5 +3562,27 @@
    "titulo": "Forrado",
    "texto": "Short forrado"
   }
+ ],
+ "42350375943": [
+  {
+   "emoji": "🍳",
+   "titulo": "Uso na cozinha",
+   "texto": "para pendurar utensílios"
+  },
+  {
+   "emoji": "💪",
+   "titulo": "Gancho forte",
+   "texto": "suporta pendurar itens"
+  },
+  {
+   "emoji": "🔄",
+   "titulo": "Varinha rotativa",
+   "texto": "giro para pendurar"
+  },
+  {
+   "emoji": "🥄",
+   "titulo": "Colher e concha",
+   "texto": "concha sem perfuração"
+  }
  ]
 }
