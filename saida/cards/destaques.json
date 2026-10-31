@@ -3078,5 +3078,27 @@
    "titulo": "Feminino",
    "texto": "Roupas esportivas femininas"
   }
+ ],
+ "19197267729": [
+  {
+   "emoji": "👟",
+   "titulo": "Plataforma",
+   "texto": "Solado alto e moderno"
+  },
+  {
+   "emoji": "🪶",
+   "titulo": "Leve",
+   "texto": "Confortável para o dia a dia"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Feminino Adulto",
+   "texto": "Tamanho adulto feminino"
+  },
+  {
+   "emoji": "🏷️",
+   "titulo": "Promoção",
+   "texto": "Preço de lançamento"
+  }
  ]
 }
