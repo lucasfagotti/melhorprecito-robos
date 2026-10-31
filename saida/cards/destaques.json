@@ -2462,5 +2462,27 @@
    "titulo": "Uso feminino",
    "texto": "Para mulheres"
   }
+ ],
+ "22094984499": [
+  {
+   "emoji": "📚",
+   "titulo": "Bilíngue",
+   "texto": "Ensina dois idiomas"
+  },
+  {
+   "emoji": "🔊",
+   "titulo": "Com Som",
+   "texto": "Recursos sonoros interativos"
+  },
+  {
+   "emoji": "✏️",
+   "titulo": "Lousa Mágica",
+   "texto": "Para escrever e apagar"
+  },
+  {
+   "emoji": "🧩",
+   "titulo": "2 em 1",
+   "texto": "Livro e lousa juntos"
+  }
  ]
 }
