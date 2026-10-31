@@ -3848,5 +3848,27 @@
    "titulo": "Promoção lançamento",
    "texto": "Oferta de lançamento 2023"
   }
+ ],
+ "21599607715": [
+  {
+   "emoji": "🪲",
+   "titulo": "Controle de Formigas",
+   "texto": "Combate formigas em casa"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Uso Residencial",
+   "texto": "Indicado para ambientes domésticos"
+  },
+  {
+   "emoji": "🧴",
+   "titulo": "1 Litro",
+   "texto": "Frasco com 1 litro"
+  },
+  {
+   "emoji": "🐜",
+   "titulo": "Controle de Insetos",
+   "texto": "Ação contra insetos"
+  }
  ]
 }
