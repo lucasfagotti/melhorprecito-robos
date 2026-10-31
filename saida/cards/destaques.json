@@ -2946,5 +2946,27 @@
    "titulo": "Máscara Capilar",
    "texto": "Uso como máscara de tratamento"
   }
+ ],
+ "21199029345": [
+  {
+   "emoji": "📏",
+   "titulo": "10 metros",
+   "texto": "Cascata com 10 metros"
+  },
+  {
+   "emoji": "💡",
+   "titulo": "400 LEDs",
+   "texto": "400 LEDs na cascata"
+  },
+  {
+   "emoji": "⚙️",
+   "titulo": "Fixo ou 8 funções",
+   "texto": "Modo fixo ou 8 funções"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Interna ou externa",
+   "texto": "Decoração interna ou externa"
+  }
  ]
 }
