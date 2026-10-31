@@ -2902,5 +2902,27 @@
    "titulo": "Organiza Mantimentos",
    "texto": "Ideal para organizar a despensa"
   }
+ ],
+ "22294171220": [
+  {
+   "emoji": "🔢",
+   "titulo": "Kit 5",
+   "texto": "cinco tigelas no conjunto"
+  },
+  {
+   "emoji": "🫙",
+   "titulo": "Vidro",
+   "texto": "material de vidro"
+  },
+  {
+   "emoji": "🔒",
+   "titulo": "Tampas herméticas",
+   "texto": "fechamento hermético nas tampas"
+  },
+  {
+   "emoji": "🍽️",
+   "titulo": "Cozinha e armazenamento",
+   "texto": "uso para cozinha e armazenar"
+  }
  ]
 }
