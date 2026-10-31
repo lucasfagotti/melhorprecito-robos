@@ -3144,5 +3144,27 @@
    "titulo": "Em Português",
    "texto": "Instruções no idioma"
   }
+ ],
+ "20761864925": [
+  {
+   "emoji": "📏",
+   "titulo": "2,7m",
+   "texto": "Comprimento do festão"
+  },
+  {
+   "emoji": "🌿",
+   "titulo": "Aramado",
+   "texto": "Estrutura de arame"
+  },
+  {
+   "emoji": "🎄",
+   "titulo": "Verde",
+   "texto": "Cor verde natalina"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Decoração",
+   "texto": "Enfeite para árvore"
+  }
  ]
 }
