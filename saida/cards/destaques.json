@@ -3650,5 +3650,27 @@
    "titulo": "Com Tábua",
    "texto": "Tábua inclusa no kit"
   }
+ ],
+ "44329709764": [
+  {
+   "emoji": "🧲",
+   "titulo": "Magnético",
+   "texto": "Peças com ímã"
+  },
+  {
+   "emoji": "🪵",
+   "titulo": "Madeira",
+   "texto": "Material de madeira"
+  },
+  {
+   "emoji": "🔢",
+   "titulo": "Números e cores",
+   "texto": "Ensina números e cores"
+  },
+  {
+   "emoji": "🎓",
+   "titulo": "Educativo",
+   "texto": "Brinquedo educativo infantil"
+  }
  ]
 }
