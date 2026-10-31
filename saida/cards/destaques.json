@@ -2704,5 +2704,27 @@
    "titulo": "Com suporte",
    "texto": "acompanha suporte para canecas"
   }
+ ],
+ "58265706324": [
+  {
+   "emoji": "💡",
+   "titulo": "Espelho LED",
+   "texto": "Iluminação com espelho integrado"
+  },
+  {
+   "emoji": "🔌",
+   "titulo": "USB Recarregável",
+   "texto": "Carrega por cabo USB"
+  },
+  {
+   "emoji": "🗂️",
+   "titulo": "4 Divisórias",
+   "texto": "Organização em quatro compartimentos"
+  },
+  {
+   "emoji": "💎",
+   "titulo": "Porta Joias",
+   "texto": "Ideal para bijuterias e joias"
+  }
  ]
 }
