@@ -3628,5 +3628,27 @@
    "titulo": "Linha Premium",
    "texto": "Versão premium modeladora"
   }
+ ],
+ "23499422626": [
+  {
+   "emoji": "🔪",
+   "titulo": "9 Peças",
+   "texto": "Kit completo para churrasco"
+  },
+  {
+   "emoji": "✏️",
+   "titulo": "Personalizado",
+   "texto": "Nome, time ou logo"
+  },
+  {
+   "emoji": "🧰",
+   "titulo": "Com Estojo",
+   "texto": "Organiza e transporta"
+  },
+  {
+   "emoji": "🪵",
+   "titulo": "Com Tábua",
+   "texto": "Tábua inclusa no kit"
+  }
  ]
 }
