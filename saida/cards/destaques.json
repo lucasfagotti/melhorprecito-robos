@@ -2748,5 +2748,27 @@
    "titulo": "Em Promoção",
    "texto": "Preço promocional disponível"
   }
+ ],
+ "58213278406": [
+  {
+   "emoji": "🧺",
+   "titulo": "Kit 7 saquinhos",
+   "texto": "sete unidades organizadoras"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Tamanho 33x27",
+   "texto": "medidas 33 x 27 cm"
+  },
+  {
+   "emoji": "👶",
+   "titulo": "Uso maternidade",
+   "texto": "organiza mala do bebê"
+  },
+  {
+   "emoji": "🎒",
+   "titulo": "Organizador prático",
+   "texto": "separa itens do bebê"
+  }
  ]
 }
