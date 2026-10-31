@@ -2682,5 +2682,27 @@
    "titulo": "Feminino",
    "texto": "modelagem para mulheres"
   }
+ ],
+ "23018970032": [
+  {
+   "emoji": "☕",
+   "titulo": "Kit 4",
+   "texto": "quatro canecas inclusas"
+  },
+  {
+   "emoji": "🌸",
+   "titulo": "Rosa",
+   "texto": "cor rosa no conjunto"
+  },
+  {
+   "emoji": "🫖",
+   "titulo": "Café e chá",
+   "texto": "serve café ou chá"
+  },
+  {
+   "emoji": "🗄️",
+   "titulo": "Com suporte",
+   "texto": "acompanha suporte para canecas"
+  }
  ]
 }
