@@ -2198,5 +2198,27 @@
    "titulo": "Tropical",
    "texto": "Estilo inspiração tropical"
   }
+ ],
+ "23298844166": [
+  {
+   "emoji": "🛞",
+   "titulo": "4 Rodas",
+   "texto": "Estabilidade para os pequenos"
+  },
+  {
+   "emoji": "🚫",
+   "titulo": "Sem Pedal",
+   "texto": "Aprende a andar equilibrando"
+  },
+  {
+   "emoji": "🪑",
+   "titulo": "Assento Confortável",
+   "texto": "Conforto na hora de brincar"
+  },
+  {
+   "emoji": "👶",
+   "titulo": "Uso Infantil",
+   "texto": "Brinquedo para aprender andar"
+  }
  ]
 }
