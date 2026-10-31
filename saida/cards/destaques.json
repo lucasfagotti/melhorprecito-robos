@@ -1824,5 +1824,27 @@
    "titulo": "Para Criança",
    "texto": "Uso infantil"
   }
+ ],
+ "23793847911": [
+  {
+   "emoji": "👟",
+   "titulo": "Feminino",
+   "texto": "Modelo para mulheres"
+  },
+  {
+   "emoji": "🤍",
+   "titulo": "Branco",
+   "texto": "Cor branca clássica"
+  },
+  {
+   "emoji": "☁️",
+   "titulo": "Macio",
+   "texto": "Material macio e confortável"
+  },
+  {
+   "emoji": "🪶",
+   "titulo": "Leve",
+   "texto": "Leve para o dia a dia"
+  }
  ]
 }
