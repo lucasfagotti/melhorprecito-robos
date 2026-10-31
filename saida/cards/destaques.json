@@ -2726,5 +2726,27 @@
    "titulo": "Porta Joias",
    "texto": "Ideal para bijuterias e joias"
   }
+ ],
+ "58250756075": [
+  {
+   "emoji": "📦",
+   "titulo": "Kit 2 Peças",
+   "texto": "Duas peças no conjunto"
+  },
+  {
+   "emoji": "🚫",
+   "titulo": "Antiderrapante",
+   "texto": "Base que não escorrega"
+  },
+  {
+   "emoji": "🍳",
+   "titulo": "Uso na Cozinha",
+   "texto": "Ideal para área de cozinha"
+  },
+  {
+   "emoji": "🏷️",
+   "titulo": "Em Promoção",
+   "texto": "Preço promocional disponível"
+  }
  ]
 }
