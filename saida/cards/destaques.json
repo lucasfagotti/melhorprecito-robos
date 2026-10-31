@@ -3100,5 +3100,27 @@
    "titulo": "Promoção",
    "texto": "Preço de lançamento"
   }
+ ],
+ "19699546038": [
+  {
+   "emoji": "👙",
+   "titulo": "Biquíni de fita",
+   "texto": "Modelo com amarração"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Suplex Premium",
+   "texto": "Tecido Suplex de qualidade"
+  },
+  {
+   "emoji": "☀️",
+   "titulo": "Moda verão",
+   "texto": "Tendência para o verão"
+  },
+  {
+   "emoji": "🌊",
+   "titulo": "Uso praia",
+   "texto": "Ideal para piscina e praia"
+  }
  ]
 }
