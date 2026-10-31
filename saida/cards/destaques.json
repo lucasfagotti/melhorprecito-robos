@@ -1802,5 +1802,27 @@
    "titulo": "Craft",
    "texto": "Linha criativa Craft"
   }
+ ],
+ "23298850030": [
+  {
+   "emoji": "🦆",
+   "titulo": "Patinho Dançante",
+   "texto": "Brinquedo infantil colorido"
+  },
+  {
+   "emoji": "💡",
+   "titulo": "Com Luzes",
+   "texto": "Luzes no patinho"
+  },
+  {
+   "emoji": "🎵",
+   "titulo": "Com Música",
+   "texto": "Toca música"
+  },
+  {
+   "emoji": "🧒",
+   "titulo": "Para Criança",
+   "texto": "Uso infantil"
+  }
  ]
 }
