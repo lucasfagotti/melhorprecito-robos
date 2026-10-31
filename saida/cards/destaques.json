@@ -2638,5 +2638,27 @@
    "titulo": "Confortável",
    "texto": "Uso confortável"
   }
+ ],
+ "23494626157": [
+  {
+   "emoji": "🔥",
+   "titulo": "Aquecimento Rápido",
+   "texto": "Pronto em 30 segundos"
+  },
+  {
+   "emoji": "🌡️",
+   "titulo": "9 Níveis",
+   "texto": "Temperatura ajustável"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Íons Negativos",
+   "texto": "Reduz frizz e danos"
+  },
+  {
+   "emoji": "💼",
+   "titulo": "Portátil",
+   "texto": "Fácil de levar"
+  }
  ]
 }
