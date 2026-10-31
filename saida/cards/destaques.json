@@ -1890,5 +1890,27 @@
    "titulo": "Uso Feminino",
    "texto": "Peça para o público feminino"
   }
+ ],
+ "45868320453": [
+  {
+   "emoji": "📏",
+   "titulo": "Capacidade 1L",
+   "texto": "Um litro de bebida"
+  },
+  {
+   "emoji": "🪵",
+   "titulo": "Cabo de Madeira",
+   "texto": "Detalhe em madeira"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Acabamento Dourado",
+   "texto": "Detalhes na cor dourada"
+  },
+  {
+   "emoji": "🍽️",
+   "titulo": "Mesa Posta",
+   "texto": "Ideal para servir à mesa"
+  }
  ]
 }
