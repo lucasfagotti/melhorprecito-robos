@@ -3188,5 +3188,27 @@
    "titulo": "Estilo",
    "texto": "Elegante e delicado"
   }
+ ],
+ "58261121925": [
+  {
+   "emoji": "📏",
+   "titulo": "4 Tamanhos",
+   "texto": "350, 600, 800 e 1000ml"
+  },
+  {
+   "emoji": "🛡️",
+   "titulo": "Aço Inox",
+   "texto": "Garrafa térmica em inox"
+  },
+  {
+   "emoji": "🧴",
+   "titulo": "Capinha Silicone",
+   "texto": "Proteção antiderrapante inclusa"
+  },
+  {
+   "emoji": "🌡️",
+   "titulo": "Térmica",
+   "texto": "Mantém a temperatura da bebida"
+  }
  ]
 }
