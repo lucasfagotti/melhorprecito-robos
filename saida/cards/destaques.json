@@ -1912,5 +1912,27 @@
    "titulo": "Mesa Posta",
    "texto": "Ideal para servir à mesa"
   }
+ ],
+ "58210541060": [
+  {
+   "emoji": "👕",
+   "titulo": "Manga Curta",
+   "texto": "camiseta de manga curta"
+  },
+  {
+   "emoji": "👖",
+   "titulo": "Calça Longa",
+   "texto": "calça comprida no conjunto"
+  },
+  {
+   "emoji": "❤️",
+   "titulo": "Estampado Coração",
+   "texto": "estampa de coração"
+  },
+  {
+   "emoji": "🌙",
+   "titulo": "Uso Noturno",
+   "texto": "ideal para dormir"
+  }
  ]
 }
