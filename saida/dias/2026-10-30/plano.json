@@ -24,11 +24,12 @@
    "link": "https://s.shopee.com.br/9KjE3RfcaZ",
    "link_telegram": "https://s.shopee.com.br/3qOHZBeXH2",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-81z1k-mhkgczey3h8h38",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": true,
    "telegram_msg": 34,
    "telegram_hora": "13:20",
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 2,
@@ -53,11 +54,12 @@
    "link": "https://s.shopee.com.br/7fb04PG9ZF",
    "link_telegram": "https://s.shopee.com.br/1BNWOKVsOl",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-81z1k-mg3sr42k07wke3",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": true,
    "telegram_msg": 35,
    "telegram_hora": "13:20",
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 3,
@@ -82,11 +84,12 @@
    "link": "https://s.shopee.com.br/4qGohDZXeH",
    "link_telegram": "https://s.shopee.com.br/1146HLf1v7",
    "imagem_url": "https://cf.shopee.com.br/file/sg-11134201-7rbll-m5eoozyg9u4q48",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": true,
    "telegram_msg": 28,
    "telegram_hora": "12:40",
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 4,
@@ -111,11 +114,12 @@
    "link": "https://s.shopee.com.br/2gCK7CV7in",
    "link_telegram": "https://s.shopee.com.br/BUzJDYhZc",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-820la-mp40zz6rr1mt39",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": true,
    "telegram_msg": 29,
    "telegram_hora": "12:40",
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 5,
@@ -140,9 +144,10 @@
    "link": "https://s.shopee.com.br/6VP2gG2zpa",
    "link_telegram": "https://s.shopee.com.br/6L5cfwFsVR",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-81z1k-mffs07cp08hxfe",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 6,
@@ -167,9 +172,10 @@
    "link": "https://s.shopee.com.br/3B8aiAo0Ui",
    "link_telegram": "https://s.shopee.com.br/W7pkbPLJX",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-820lr-mpxy82d0505ccb",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 7,
@@ -195,9 +201,10 @@
    "link": "https://s.shopee.com.br/5VWVj0xoTT",
    "link_telegram": "https://s.shopee.com.br/3B8azwWexP",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-820l6-mtsh7y2aam0y19",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 8,
@@ -223,9 +230,10 @@
    "link": "https://s.shopee.com.br/1BNWKNlFSM",
    "link_telegram": "https://s.shopee.com.br/2gCKPbnmuo",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-820lj-mmnmb62hdxjab4",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 9,
@@ -251,9 +259,10 @@
    "link": "https://s.shopee.com.br/7puQGeLXD0",
    "link_telegram": "https://s.shopee.com.br/AAILLSFHzX",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-81ztc-mj5cubo7uz29de",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   },
   {
    "n": 10,
@@ -279,9 +288,10 @@
    "link": "https://s.shopee.com.br/1BNWZ3EJG9",
    "link_telegram": "https://s.shopee.com.br/8KqhA9cSSZ",
    "imagem_url": "https://cf.shopee.com.br/file/br-11134207-820mb-mt9wcdhx0s8x50",
-   "shopee_postado": false,
+   "shopee_postado": true,
    "telegram_postado": false,
-   "aprovado_ig": true
+   "aprovado_ig": true,
+   "shopee_hora": "01:15"
   }
  ]
 }
