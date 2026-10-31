@@ -2308,5 +2308,27 @@
    "titulo": "Com Bolso",
    "texto": "Tem bolso"
   }
+ ],
+ "23299143621": [
+  {
+   "emoji": "👕",
+   "titulo": "Kit 3 peças",
+   "texto": "Três camisetas no pacote"
+  },
+  {
+   "emoji": "💧",
+   "titulo": "Tecido Dry Fit",
+   "texto": "Material Dry Fit"
+  },
+  {
+   "emoji": "🏃",
+   "titulo": "Uso esportivo",
+   "texto": "Academia, corrida e caminhada"
+  },
+  {
+   "emoji": "♀️",
+   "titulo": "Modelo feminino",
+   "texto": "Camiseta feminina"
+  }
  ]
 }
