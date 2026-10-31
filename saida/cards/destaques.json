@@ -2418,5 +2418,27 @@
    "titulo": "Forrada",
    "texto": "Peça com forro interno"
   }
+ ],
+ "23694913081": [
+  {
+   "emoji": "👖",
+   "titulo": "Pantalona",
+   "texto": "Modelo pantalona amplo"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Cintura Alta",
+   "texto": "Cintura alta elegante"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Tecido Texturado",
+   "texto": "Tecido texturado"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Feminino",
+   "texto": "Uso feminino"
+  }
  ]
 }
