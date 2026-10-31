@@ -2880,5 +2880,27 @@
    "titulo": "Tecido suplex",
    "texto": "Malha com elasticidade"
   }
+ ],
+ "55006996925": [
+  {
+   "emoji": "🔒",
+   "titulo": "Trava Segura",
+   "texto": "Fechamento hermético com trava"
+  },
+  {
+   "emoji": "🫙",
+   "titulo": "Transparente",
+   "texto": "Vê o conteúdo facilmente"
+  },
+  {
+   "emoji": "✅",
+   "titulo": "BPA Free",
+   "texto": "Livre de BPA"
+  },
+  {
+   "emoji": "🍚",
+   "titulo": "Organiza Mantimentos",
+   "texto": "Ideal para organizar a despensa"
+  }
  ]
 }
