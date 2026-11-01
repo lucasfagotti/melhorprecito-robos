@@ -4046,5 +4046,27 @@
    "titulo": "Para brinquedos",
    "texto": "Também guarda brinquedos"
   }
+ ],
+ "22398347221": [
+  {
+   "emoji": "👗",
+   "titulo": "Comprimento longo",
+   "texto": "Calça e manga compridas"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Malha macia",
+   "texto": "Tecido de malha confortável"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Uso adulto",
+   "texto": "Modelo feminino adulto"
+  },
+  {
+   "emoji": "🌙",
+   "titulo": "Para dormir",
+   "texto": "Ideal para noites e descanso"
+  }
  ]
 }
