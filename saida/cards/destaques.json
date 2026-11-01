@@ -4508,5 +4508,27 @@
    "titulo": "Porta Mantimento",
    "texto": "Organiza a cozinha"
   }
+ ],
+ "20297976281": [
+  {
+   "emoji": "🧴",
+   "titulo": "1 Litro",
+   "texto": "Volume grande rende mais"
+  },
+  {
+   "emoji": "💨",
+   "titulo": "Spray Incluso",
+   "texto": "Borrifador para aplicar fácil"
+  },
+  {
+   "emoji": "🐜",
+   "titulo": "Contra Formigas",
+   "texto": "Ajuda a diminuir formigas"
+  },
+  {
+   "emoji": "🍳",
+   "titulo": "Uso na Cozinha",
+   "texto": "Indicado para área da cozinha"
+  }
  ]
 }
