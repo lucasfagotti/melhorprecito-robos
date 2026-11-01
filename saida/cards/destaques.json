@@ -4156,5 +4156,27 @@
    "titulo": "Para presentear",
    "texto": "ideal para dar de presente"
   }
+ ],
+ "23598563635": [
+  {
+   "emoji": "🧴",
+   "titulo": "1 Litro",
+   "texto": "Solução em frasco de 1 litro"
+  },
+  {
+   "emoji": "💦",
+   "titulo": "Spray Incluído",
+   "texto": "Acompanha 1 borrifador spray"
+  },
+  {
+   "emoji": "🚪",
+   "titulo": "Locais de Passagem",
+   "texto": "Indicado para áreas de passagem"
+  },
+  {
+   "emoji": "🪟",
+   "titulo": "Frestas da Casa",
+   "texto": "Uso em frestas e cantos"
+  }
  ]
 }
