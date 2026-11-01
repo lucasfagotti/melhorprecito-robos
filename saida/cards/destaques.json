@@ -4750,5 +4750,27 @@
    "titulo": "Quentinho",
    "texto": "Aconchego para dias frios"
   }
+ ],
+ "23294917833": [
+  {
+   "emoji": "🔋",
+   "titulo": "Usa 2 pilhas",
+   "texto": "Funciona com 2 pilhas AA"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "Aço inox",
+   "texto": "Copo em aço inox"
+  },
+  {
+   "emoji": "🌀",
+   "titulo": "Mistura automática",
+   "texto": "Misturador elétrico magnético automático"
+  },
+  {
+   "emoji": "☕",
+   "titulo": "Café e leite",
+   "texto": "Ideal para café, leite e chocolate"
+  }
  ]
 }
