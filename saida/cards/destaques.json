@@ -4552,5 +4552,27 @@
    "titulo": "Linha premium",
    "texto": "Versão premium"
   }
+ ],
+ "23098794263": [
+  {
+   "emoji": "🌡️",
+   "titulo": "Quente e Frio",
+   "texto": "Mantém temperatura por horas"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "550/350ml",
+   "texto": "Duas opções de capacidade"
+  },
+  {
+   "emoji": "🛡️",
+   "titulo": "Parede Dupla",
+   "texto": "Isolamento térmico reforçado"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Uso na Academia",
+   "texto": "Portátil para levar treinar"
+  }
  ]
 }
