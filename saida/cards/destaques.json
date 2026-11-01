@@ -4618,5 +4618,27 @@
    "titulo": "Saída de praia",
    "texto": "Uso como saída de praia"
   }
+ ],
+ "22099487979": [
+  {
+   "emoji": "📦",
+   "titulo": "Kit 10",
+   "texto": "dez potes por kit"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "800ml",
+   "texto": "capacidade de 800ml cada"
+  },
+  {
+   "emoji": "🔒",
+   "titulo": "Travas laterais",
+   "texto": "fechamento hermético com travas"
+  },
+  {
+   "emoji": "❄️",
+   "titulo": "Uso no congelador",
+   "texto": "ideal para congelar alimentos"
+  }
  ]
 }
