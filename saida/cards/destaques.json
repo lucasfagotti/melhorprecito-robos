@@ -4728,5 +4728,27 @@
    "titulo": "6 peças cada",
    "texto": "seis peças por quebra-cabeça"
   }
+ ],
+ "58210630464": [
+  {
+   "emoji": "🐶",
+   "titulo": "Para pets",
+   "texto": "Cachorro e animais pequenos"
+  },
+  {
+   "emoji": "🧸",
+   "titulo": "Pelúcia macia",
+   "texto": "Superfície macia e confortável"
+  },
+  {
+   "emoji": "💧",
+   "titulo": "Fundo impermeável",
+   "texto": "Protege contra umidade"
+  },
+  {
+   "emoji": "🔥",
+   "titulo": "Quentinho",
+   "texto": "Aconchego para dias frios"
+  }
  ]
 }
