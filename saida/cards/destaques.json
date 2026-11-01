@@ -4530,5 +4530,27 @@
    "titulo": "Uso na Cozinha",
    "texto": "Indicado para área da cozinha"
   }
+ ],
+ "46560301686": [
+  {
+   "emoji": "🐾",
+   "titulo": "Uso duplo",
+   "texto": "Para gatos e cães"
+  },
+  {
+   "emoji": "💧",
+   "titulo": "Capacidade 1L",
+   "texto": "Reservatório de 1 litro"
+  },
+  {
+   "emoji": "⚙️",
+   "titulo": "Automático",
+   "texto": "Comedouro e bebedouro automático"
+  },
+  {
+   "emoji": "⭐",
+   "titulo": "Linha premium",
+   "texto": "Versão premium"
+  }
  ]
 }
