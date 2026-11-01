@@ -4420,5 +4420,27 @@
    "titulo": "Multiuso",
    "texto": "Serve para vários itens"
   }
+ ],
+ "22797189353": [
+  {
+   "emoji": "💎",
+   "titulo": "Prata 925",
+   "texto": "Material prata de lei"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Cravejado",
+   "texto": "32 pedras de zircônia"
+  },
+  {
+   "emoji": "⭕",
+   "titulo": "Argola",
+   "texto": "Formato argola circular"
+  },
+  {
+   "emoji": "🛡️",
+   "titulo": "Banhado",
+   "texto": "Acabamento banhado protetor"
+  }
  ]
 }
