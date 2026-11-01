@@ -4112,5 +4112,27 @@
    "titulo": "Feminina",
    "texto": "Calçado feminino"
   }
+ ],
+ "19998334991": [
+  {
+   "emoji": "🧩",
+   "titulo": "Educativo",
+   "texto": "Brinquedo educativo para crianças"
+  },
+  {
+   "emoji": "🎨",
+   "titulo": "Cores",
+   "texto": "Jogo de cores infantil"
+  },
+  {
+   "emoji": "🧠",
+   "titulo": "Montessori",
+   "texto": "Método Montessori de aprendizado"
+  },
+  {
+   "emoji": "🌀",
+   "titulo": "Labirinto",
+   "texto": "Labirinto para desafiar a criança"
+  }
  ]
 }
