@@ -4244,5 +4244,27 @@
    "titulo": "Zero Transparência",
    "texto": "Tecido não fica transparente"
   }
+ ],
+ "23892042267": [
+  {
+   "emoji": "📏",
+   "titulo": "Três Tamanhos",
+   "texto": "600ml, 800ml e 1000ml"
+  },
+  {
+   "emoji": "🛡️",
+   "titulo": "Aço Inoxidável",
+   "texto": "Material resistente e durável"
+  },
+  {
+   "emoji": "🌡️",
+   "titulo": "Quente & Frio",
+   "texto": "Mantém a temperatura"
+  },
+  {
+   "emoji": "🏃",
+   "titulo": "Uso Versátil",
+   "texto": "Café, água, suco e corrida"
+  }
  ]
 }
