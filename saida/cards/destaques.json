@@ -4926,5 +4926,27 @@
    "titulo": "127V ou 220V",
    "texto": "Escolha a voltagem ideal"
   }
+ ],
+ "23194398000": [
+  {
+   "emoji": "🥤",
+   "titulo": "Copo Térmico",
+   "texto": "mantém temperatura por mais tempo"
+  },
+  {
+   "emoji": "🔩",
+   "titulo": "Aço Inox",
+   "texto": "material resistente e durável"
+  },
+  {
+   "emoji": "✍️",
+   "titulo": "Personalizado",
+   "texto": "gravação a laser com seu nome"
+  },
+  {
+   "emoji": "🇧🇷",
+   "titulo": "Time Brasileiro",
+   "texto": "tema de time de futebol"
+  }
  ]
 }
