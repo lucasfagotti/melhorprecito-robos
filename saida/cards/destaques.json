@@ -4376,5 +4376,27 @@
    "titulo": "Lançamento",
    "texto": "Novo lançamento feminino"
   }
+ ],
+ "23291753727": [
+  {
+   "emoji": "💼",
+   "titulo": "Portátil",
+   "texto": "Leve para viagens"
+  },
+  {
+   "emoji": "👜",
+   "titulo": "Couro",
+   "texto": "Material em couro"
+  },
+  {
+   "emoji": "🗂️",
+   "titulo": "Duplo Compartimento",
+   "texto": "Dois espaços organizadores"
+  },
+  {
+   "emoji": "💍",
+   "titulo": "Multi-Função",
+   "texto": "Para jóias e bijuterias"
+  }
  ]
 }
