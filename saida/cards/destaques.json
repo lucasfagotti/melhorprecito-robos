@@ -4354,5 +4354,27 @@
    "titulo": "Glitter",
    "texto": "Acabamento brilhante com glitter"
   }
+ ],
+ "20649735690": [
+  {
+   "emoji": "👜",
+   "titulo": "Kit 2 Bolsas",
+   "texto": "Duas bolsas no conjunto"
+  },
+  {
+   "emoji": "👝",
+   "titulo": "Com Carteira",
+   "texto": "Carteira inclusa no kit"
+  },
+  {
+   "emoji": "🔀",
+   "titulo": "Transversal",
+   "texto": "Uso transversal e tiracolo"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Lançamento",
+   "texto": "Novo lançamento feminino"
+  }
  ]
 }
