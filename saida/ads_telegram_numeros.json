@@ -1,10 +1,10 @@
 {
  "quando": "2026-11-02",
- "status": "ACTIVE",
- "gasto": 19.93,
- "gasto_mes": 12.25,
+ "status": "PAUSED",
+ "gasto": 20.0,
+ "gasto_mes": 12.32,
  "cliques": 92,
  "membros": 0,
  "custo_por_membro": null,
- "pausado_por": null
+ "pausado_por": "R$ 20 gastos sem membro novo"
 }
