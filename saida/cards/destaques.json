@@ -5212,5 +5212,27 @@
    "titulo": "Cor Prateada",
    "texto": "Acabamento moderno e elegante"
   }
+ ],
+ "58266799438": [
+  {
+   "emoji": "🍵",
+   "titulo": "Chá Branco",
+   "texto": "sabor suave e delicado"
+  },
+  {
+   "emoji": "📦",
+   "titulo": "Kit 4 Itens",
+   "texto": "conjunto completo para servir"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Uso em Casa",
+   "texto": "ideal para o dia a dia"
+  },
+  {
+   "emoji": "🐨",
+   "titulo": "Tema Coala",
+   "texto": "design fofo e divertido"
+  }
  ]
 }
