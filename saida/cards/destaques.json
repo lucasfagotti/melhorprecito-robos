@@ -5608,5 +5608,49 @@
    "titulo": "Envio Imediato",
    "texto": "pronta entrega"
   }
+ ],
+ "20197986423": [
+  {
+   "emoji": "👕",
+   "titulo": "Conjunto 2 peças",
+   "texto": "Top e calça legging"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Tecido canelado",
+   "texto": "Textura canelada"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Uso fitness",
+   "texto": "Ideal para treino"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Feminino",
+   "texto": "Modelagem feminina"
+  }
+ ],
+ "22593915398": [
+  {
+   "emoji": "⚡",
+   "titulo": "110V",
+   "texto": "Voltagem 110 volts"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "Inox",
+   "texto": "Corpo em aço inox"
+  },
+  {
+   "emoji": "☕",
+   "titulo": "Café e chá",
+   "texto": "Serve café e chá"
+  },
+  {
+   "emoji": "🫖",
+   "titulo": "Jarra elétrica",
+   "texto": "Formato jarra com alça"
+  }
  ]
 }
