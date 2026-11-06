@@ -5828,5 +5828,27 @@
    "titulo": "Moda Verão",
    "texto": "Ideal para dias quentes"
   }
+ ],
+ "58258151749": [
+  {
+   "emoji": "👜",
+   "titulo": "Tamanho Grande",
+   "texto": "Espaçosa para o dia a dia"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "Porta Copo",
+   "texto": "Compartimento para bebida"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Couro PU",
+   "texto": "Material sintético resistente"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Moda Elegante",
+   "texto": "Estilo transversal compacto"
+  }
  ]
 }
