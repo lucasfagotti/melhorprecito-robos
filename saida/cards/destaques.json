@@ -5872,5 +5872,27 @@
    "titulo": "Felpuda premium",
    "texto": "toalha felpuda e macia"
   }
+ ],
+ "58262387784": [
+  {
+   "emoji": "👟",
+   "titulo": "Feminino",
+   "texto": "Modelo para mulheres"
+  },
+  {
+   "emoji": "🏃",
+   "titulo": "Esportivo",
+   "texto": "Ideal para treino"
+  },
+  {
+   "emoji": "🪶",
+   "titulo": "Leve",
+   "texto": "Confortável para caminhada"
+  },
+  {
+   "emoji": "💪",
+   "titulo": "Fitness",
+   "texto": "Uso em academia"
+  }
  ]
 }
