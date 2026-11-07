@@ -6268,5 +6268,27 @@
    "titulo": "Uso praia",
    "texto": "Ideal para moda praia"
   }
+ ],
+ "22701563992": [
+  {
+   "emoji": "📏",
+   "titulo": "10 metros",
+   "texto": "comprimento de 10 metros"
+  },
+  {
+   "emoji": "💡",
+   "titulo": "400 LEDs",
+   "texto": "400 leds de luz"
+  },
+  {
+   "emoji": "🎄",
+   "titulo": "Natal e festas",
+   "texto": "decoração natalina e festas"
+  },
+  {
+   "emoji": "🔌",
+   "titulo": "110v/220v",
+   "texto": "voltagem 110v e 220v"
+  }
  ]
 }
