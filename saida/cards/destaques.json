@@ -6224,5 +6224,27 @@
    "titulo": "Multiuso",
    "texto": "Serve para vários alimentos"
   }
+ ],
+ "21999494318": [
+  {
+   "emoji": "💧",
+   "titulo": "100ml",
+   "texto": "frasco de 100ml"
+  },
+  {
+   "emoji": "🌊",
+   "titulo": "Hidrossolúvel",
+   "texto": "fácil de diluir em água"
+  },
+  {
+   "emoji": "🎄",
+   "titulo": "Natalinas",
+   "texto": "fragrância temática de Natal"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Essência",
+   "texto": "para perfumar ambientes"
+  }
  ]
 }
