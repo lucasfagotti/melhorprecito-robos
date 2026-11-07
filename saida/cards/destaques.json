@@ -6070,5 +6070,27 @@
    "titulo": "Mistura Café",
    "texto": "Ideal para café"
   }
+ ],
+ "23393881853": [
+  {
+   "emoji": "🔪",
+   "titulo": "Multifuncional",
+   "texto": "Corta vários tipos de alimentos"
+  },
+  {
+   "emoji": "🥕",
+   "titulo": "Para legumes",
+   "texto": "Ideal para legumes e verduras"
+  },
+  {
+   "emoji": "🐟",
+   "titulo": "Peixes e frangos",
+   "texto": "Também corta peixes e frangos"
+  },
+  {
+   "emoji": "✂️",
+   "titulo": "Tesoura de corte",
+   "texto": "Formato de tesoura para alimentos"
+  }
  ]
 }
