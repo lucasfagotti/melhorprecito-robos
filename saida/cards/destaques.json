@@ -6048,5 +6048,27 @@
    "titulo": "Feminino",
    "texto": "Peça para público feminino"
   }
+ ],
+ "58250219337": [
+  {
+   "emoji": "🔋",
+   "titulo": "Bateria Recarregável",
+   "texto": "Recarrega via USB"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "Capacidade 380ml",
+   "texto": "Volume de 380ml"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Elétrica USB",
+   "texto": "Funciona por USB"
+  },
+  {
+   "emoji": "☕",
+   "titulo": "Mistura Café",
+   "texto": "Ideal para café"
+  }
  ]
 }
