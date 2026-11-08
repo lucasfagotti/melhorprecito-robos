@@ -6312,5 +6312,27 @@
    "titulo": "Envio Imediato",
    "texto": "Pronta entrega para você"
   }
+ ],
+ "23392658160": [
+  {
+   "emoji": "🔄",
+   "titulo": "Giro 360°",
+   "texto": "Acesso fácil a todos os lados"
+  },
+  {
+   "emoji": "🍴",
+   "titulo": "Organiza Talheres",
+   "texto": "Facas, garfos e colheres"
+  },
+  {
+   "emoji": "🍳",
+   "titulo": "Uso na Cozinha",
+   "texto": "Mantém utensílios organizados"
+  },
+  {
+   "emoji": "📦",
+   "titulo": "Porta Utensílios",
+   "texto": "Compacto e funcional"
+  }
  ]
 }
