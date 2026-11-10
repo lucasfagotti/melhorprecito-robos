@@ -6488,5 +6488,27 @@
    "titulo": "Tamanho plus",
    "texto": "Linha plus feminina"
   }
+ ],
+ "58207999914": [
+  {
+   "emoji": "🌡️",
+   "titulo": "Display Digital",
+   "texto": "Controle de temperatura visível"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Bivolt",
+   "texto": "Funciona em 110V e 220V"
+  },
+  {
+   "emoji": "🔥",
+   "titulo": "Até 230°C",
+   "texto": "Alta temperatura para modelar"
+  },
+  {
+   "emoji": "🛡️",
+   "titulo": "Cerdas Protetoras",
+   "texto": "Cerdas que protegem o cabelo"
+  }
  ]
 }
