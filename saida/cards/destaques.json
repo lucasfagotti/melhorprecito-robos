@@ -6466,5 +6466,27 @@
    "titulo": "Linha Premium",
    "texto": "Decoração com acabamento premium"
   }
+ ],
+ "54950249563": [
+  {
+   "emoji": "👖",
+   "titulo": "Calça wide leg",
+   "texto": "Modelo pantalona amplo"
+  },
+  {
+   "emoji": "👜",
+   "titulo": "Com bolsos",
+   "texto": "Bolsos na calça"
+  },
+  {
+   "emoji": "👕",
+   "titulo": "Kit 2 peças",
+   "texto": "Calça e regata juntas"
+  },
+  {
+   "emoji": "➕",
+   "titulo": "Tamanho plus",
+   "texto": "Linha plus feminina"
+  }
  ]
 }
