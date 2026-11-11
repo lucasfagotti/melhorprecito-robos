@@ -6752,5 +6752,27 @@
    "titulo": "Moda Feminina",
    "texto": "Estilo para festas"
   }
+ ],
+ "19851314607": [
+  {
+   "emoji": "👟",
+   "titulo": "Feminino",
+   "texto": "Tênis para mulher"
+  },
+  {
+   "emoji": "🪢",
+   "titulo": "Elástico",
+   "texto": "Fechamento elástico fácil"
+  },
+  {
+   "emoji": "🦶",
+   "titulo": "Calce Fácil",
+   "texto": "Fácil de calçar"
+  },
+  {
+   "emoji": "🪶",
+   "titulo": "Leve",
+   "texto": "Conforto leve no uso"
+  }
  ]
 }
