@@ -6686,5 +6686,27 @@
    "titulo": "Plug elétrico",
    "texto": "Funciona na tomada"
   }
+ ],
+ "50167601809": [
+  {
+   "emoji": "👕",
+   "titulo": "Top Frente Única",
+   "texto": "Top com frente única"
+  },
+  {
+   "emoji": "🩳",
+   "titulo": "Shorts Cintura Alta",
+   "texto": "Shorts modelador cintura alta"
+  },
+  {
+   "emoji": "📱",
+   "titulo": "Com Bolso",
+   "texto": "Shorts com bolso"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Tamanhos P ao GG",
+   "texto": "Disponível do P ao GG"
+  }
  ]
 }
