@@ -7500,5 +7500,27 @@
    "titulo": "200g",
    "texto": "Pote com 200 gramas"
   }
+ ],
+ "22797891574": [
+  {
+   "emoji": "📏",
+   "titulo": "Tamanho 8cm",
+   "texto": "Globo compacto de 8cm"
+  },
+  {
+   "emoji": "🔮",
+   "titulo": "Vidro",
+   "texto": "Feito em vidro"
+  },
+  {
+   "emoji": "🎄",
+   "titulo": "Decoração natalina",
+   "texto": "Enfeite para o Natal"
+  },
+  {
+   "emoji": "❄️",
+   "titulo": "Globo de neve",
+   "texto": "Modelo globo de neve"
+  }
  ]
 }
