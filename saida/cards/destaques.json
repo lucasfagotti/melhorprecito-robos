@@ -7544,5 +7544,27 @@
    "titulo": "Cor prateada",
    "texto": "Acabamento prateado"
   }
+ ],
+ "21543845617": [
+  {
+   "emoji": "🔒",
+   "titulo": "Hermético",
+   "texto": "Fecha bem e conserva"
+  },
+  {
+   "emoji": "🧴",
+   "titulo": "Acrílico",
+   "texto": "Material plástico resistente"
+  },
+  {
+   "emoji": "🍚",
+   "titulo": "Mantimentos",
+   "texto": "Ideal para alimentos secos"
+  },
+  {
+   "emoji": "🗄️",
+   "titulo": "Armário",
+   "texto": "Organiza a cozinha"
+  }
  ]
 }
