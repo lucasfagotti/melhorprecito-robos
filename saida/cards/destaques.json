@@ -7588,5 +7588,27 @@
    "titulo": "Uso diário",
    "texto": "fralda descartável infantil"
   }
+ ],
+ "18599202928": [
+  {
+   "emoji": "💧",
+   "titulo": "Capacidade 10L e 20L",
+   "texto": "Dois tamanhos disponíveis"
+  },
+  {
+   "emoji": "❄️",
+   "titulo": "Natural e Gelada",
+   "texto": "Água natural ou gelada"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Bivolt",
+   "texto": "Funciona em 110V e 220V"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Uso doméstico",
+   "texto": "Ideal para casa e escritório"
+  }
  ]
 }
