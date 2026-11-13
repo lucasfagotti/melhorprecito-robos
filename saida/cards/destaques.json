@@ -7610,5 +7610,27 @@
    "titulo": "Uso doméstico",
    "texto": "Ideal para casa e escritório"
   }
+ ],
+ "19199382343": [
+  {
+   "emoji": "💡",
+   "titulo": "LED RGB",
+   "texto": "Luz pisca-pisca colorida"
+  },
+  {
+   "emoji": "🎄",
+   "titulo": "Tema Natal",
+   "texto": "Estrela, lua e Papai Noel"
+  },
+  {
+   "emoji": "❄️",
+   "titulo": "Efeito Neve",
+   "texto": "Decoração com tema neve"
+  },
+  {
+   "emoji": "🪟",
+   "titulo": "Uso Sacada",
+   "texto": "Cortina para sacada e janela"
+  }
  ]
 }
