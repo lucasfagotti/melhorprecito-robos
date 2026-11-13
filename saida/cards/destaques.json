@@ -7456,5 +7456,27 @@
    "titulo": "Hidratação",
    "texto": "Uso para hidratar os fios"
   }
+ ],
+ "58258066970": [
+  {
+   "emoji": "📐",
+   "titulo": "30cm Quadrada",
+   "texto": "Formato quadrado de 30cm"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "1500W",
+   "texto": "Potência de 1500 watts"
+  },
+  {
+   "emoji": "🔌",
+   "titulo": "Bivolt",
+   "texto": "127V e 220V"
+  },
+  {
+   "emoji": "🖤",
+   "titulo": "Cor Preta",
+   "texto": "Acabamento na cor preta"
+  }
  ]
 }
