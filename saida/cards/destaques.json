@@ -7742,5 +7742,27 @@
    "titulo": "Forro Duplo",
    "texto": "Camiseta com forro duplo"
   }
+ ],
+ "19903708103": [
+  {
+   "emoji": "👟",
+   "titulo": "Feminino",
+   "texto": "Tênis para mulheres"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Academia",
+   "texto": "Ideal para treino"
+  },
+  {
+   "emoji": "☁️",
+   "titulo": "Confortável",
+   "texto": "Casual e confortável"
+  },
+  {
+   "emoji": "🔥",
+   "titulo": "Super Promoção",
+   "texto": "Oferta imperdível"
+  }
  ]
 }
