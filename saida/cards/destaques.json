@@ -8116,5 +8116,27 @@
    "titulo": "Espessura 9cm",
    "texto": "Segmentos de 2 metros"
   }
+ ],
+ "44712514608": [
+  {
+   "emoji": "👗",
+   "titulo": "Modelagem Flare",
+   "texto": "Perna flare e caimento fluido"
+  },
+  {
+   "emoji": "🔙",
+   "titulo": "Costa Nua",
+   "texto": "Costas abertas com trançado"
+  },
+  {
+   "emoji": "🖤",
+   "titulo": "Cor Blackout",
+   "texto": "Preto com zero transparência"
+  },
+  {
+   "emoji": "🏋️",
+   "titulo": "Uso Fitness",
+   "texto": "Ideal para treino e academia"
+  }
  ]
 }
