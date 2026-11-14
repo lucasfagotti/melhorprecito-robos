@@ -7962,5 +7962,27 @@
    "titulo": "Óculos de sol",
    "texto": "Proteção para dias ensolarados"
   }
+ ],
+ "23491186625": [
+  {
+   "emoji": "🛡️",
+   "titulo": "Proteção Transparente",
+   "texto": "capa protetora para trocador"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Material Plástico",
+   "texto": "feita de plástico"
+  },
+  {
+   "emoji": "👶",
+   "titulo": "Uso Bebê",
+   "texto": "para menino e menina"
+  },
+  {
+   "emoji": "🔄",
+   "titulo": "Trocador Anatômico",
+   "texto": "compatível com trocador americano anatômico"
+  }
  ]
 }
