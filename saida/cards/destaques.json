@@ -7698,5 +7698,27 @@
    "titulo": "Vira pista",
    "texto": "caixa container vira pista"
   }
+ ],
+ "28338734033": [
+  {
+   "emoji": "🐱",
+   "titulo": "Para Gatos",
+   "texto": "diversão para o seu gato"
+  },
+  {
+   "emoji": "🎯",
+   "titulo": "Bolinha Interativo",
+   "texto": "brinquedo com bolinha incluso"
+  },
+  {
+   "emoji": "🏗️",
+   "titulo": "Poste Arranhador",
+   "texto": "ajuda a afiar as unhas"
+  },
+  {
+   "emoji": "🎮",
+   "titulo": "Brinquedo Completo",
+   "texto": "arranhar e brincar junto"
+  }
  ]
 }
