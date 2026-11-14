@@ -7896,5 +7896,27 @@
    "titulo": "Voltagem 220v",
    "texto": "Funciona em 220 volts"
   }
+ ],
+ "22494668584": [
+  {
+   "emoji": "👙",
+   "titulo": "Fio Duplo",
+   "texto": "Alça fina dupla"
+  },
+  {
+   "emoji": "🔄",
+   "titulo": "Bojo Removível",
+   "texto": "Bojo pode ser retirado"
+  },
+  {
+   "emoji": "♀️",
+   "titulo": "Feminino",
+   "texto": "Modelagem para mulher"
+  },
+  {
+   "emoji": "🏖️",
+   "titulo": "Uso Praia",
+   "texto": "Ideal para piscina e praia"
+  }
  ]
 }
