@@ -7874,5 +7874,27 @@
    "titulo": "Troca Prática",
    "texto": "Facilita identificar roupinhas"
   }
+ ],
+ "26841826773": [
+  {
+   "emoji": "📏",
+   "titulo": "Capacidade 1.8L",
+   "texto": "Volume de 1,8 litros"
+  },
+  {
+   "emoji": "🥤",
+   "titulo": "Material inox",
+   "texto": "Corpo em aço inox"
+  },
+  {
+   "emoji": "☕",
+   "titulo": "Café e chá",
+   "texto": "Ideal para café e chá"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Voltagem 220v",
+   "texto": "Funciona em 220 volts"
+  }
  ]
 }
