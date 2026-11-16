@@ -8600,5 +8600,27 @@
    "titulo": "Limpeza",
    "texto": "remove resíduos de henna"
   }
+ ],
+ "23093418338": [
+  {
+   "emoji": "🧴",
+   "titulo": "Creme Oxidante",
+   "texto": "para tintura de sobrancelhas"
+  },
+  {
+   "emoji": "🎨",
+   "titulo": "Uso Profissional",
+   "texto": "revela a cor da tintura"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Fácil Aplicação",
+   "texto": "textura em creme"
+  },
+  {
+   "emoji": "👁️",
+   "titulo": "Para Sobrancelhas",
+   "texto": "aplicação específica na região"
+  }
  ]
 }
