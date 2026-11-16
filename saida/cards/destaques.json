@@ -8644,5 +8644,27 @@
    "titulo": "Fixação",
    "texto": "Ajuda a fixar a henna"
   }
+ ],
+ "58270492501": [
+  {
+   "emoji": "🎄",
+   "titulo": "Tema Natal",
+   "texto": "Decoração natalina festiva"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Uso interno",
+   "texto": "Para decorar a casa"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Enfeite",
+   "texto": "Peça de decoração"
+  },
+  {
+   "emoji": "🎁",
+   "titulo": "Presenteável",
+   "texto": "Ideal para presentear"
+  }
  ]
 }
