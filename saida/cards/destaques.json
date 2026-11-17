@@ -8864,5 +8864,27 @@
    "titulo": "Promoção",
    "texto": "Em promoção"
   }
+ ],
+ "18931705150": [
+  {
+   "emoji": "🔋",
+   "titulo": "Sem Fio",
+   "texto": "Elétrico e sem fio"
+  },
+  {
+   "emoji": "🥣",
+   "titulo": "Capacidade 250ML",
+   "texto": "Recipiente de 250ML"
+  },
+  {
+   "emoji": "🧄",
+   "titulo": "Uso Versátil",
+   "texto": "Alho, gengibre e legumes"
+  },
+  {
+   "emoji": "🔪",
+   "titulo": "Tritura e Processa",
+   "texto": "Triturador de alimentos"
+  }
  ]
 }
