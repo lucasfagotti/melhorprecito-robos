@@ -8798,5 +8798,27 @@
    "titulo": "Revenda",
    "texto": "Opção para revenda feminina"
   }
+ ],
+ "58218065616": [
+  {
+   "emoji": "👖",
+   "titulo": "Pantalona",
+   "texto": "Modelo pantalona amplo"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Cintura Alta",
+   "texto": "Cintura alta valoriza silhueta"
+  },
+  {
+   "emoji": "🎀",
+   "titulo": "Amarração",
+   "texto": "Amarração elegante na cintura"
+  },
+  {
+   "emoji": "👩",
+   "titulo": "Feminina",
+   "texto": "Peça feminina sensorial"
+  }
  ]
 }
