@@ -8732,5 +8732,27 @@
    "titulo": "Herméticos",
    "texto": "fechamento hermético que preserva"
   }
+ ],
+ "22098952331": [
+  {
+   "emoji": "💧",
+   "titulo": "Tônico Capilar",
+   "texto": "uso tópico no cabelo"
+  },
+  {
+   "emoji": "🌱",
+   "titulo": "Cresce Cabelo",
+   "texto": "estimula o crescimento capilar"
+  },
+  {
+   "emoji": "🛑",
+   "titulo": "Acaba com Queda",
+   "texto": "combate a queda de cabelo"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Preenche Falhas",
+   "texto": "preenche falhas no cabelo"
+  }
  ]
 }
