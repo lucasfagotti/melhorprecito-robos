@@ -9304,5 +9304,27 @@
    "titulo": "Uso Verão",
    "texto": "Ideal para festa e casual"
   }
+ ],
+ "58269021620": [
+  {
+   "emoji": "🎄",
+   "titulo": "Tema Natalino",
+   "texto": "Desenhos natalinos em movimento"
+  },
+  {
+   "emoji": "🌈",
+   "titulo": "LED RGB",
+   "texto": "Luzes coloridas RGB"
+  },
+  {
+   "emoji": "🔌",
+   "titulo": "Bivolt",
+   "texto": "Funciona em 110V e 220V"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "Casa e Fachada",
+   "texto": "Decoração para casa e fachada"
+  }
  ]
 }
