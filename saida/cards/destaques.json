@@ -9238,5 +9238,27 @@
    "titulo": "Blush e pó",
    "texto": "Uso com blush e pó solto"
   }
+ ],
+ "58218992272": [
+  {
+   "emoji": "🛏️",
+   "titulo": "Tamanhos",
+   "texto": "Solteiro, Casal, Queen e King"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Micropercal 400 Fios",
+   "texto": "Tecido macio e resistente"
+  },
+  {
+   "emoji": "🪡",
+   "titulo": "Bordado Inglês",
+   "texto": "Detalhe bordado na fronha"
+  },
+  {
+   "emoji": "🎁",
+   "titulo": "Com Fronha",
+   "texto": "Jogo inclui fronha"
+  }
  ]
 }
