@@ -9414,5 +9414,27 @@
    "titulo": "Acessório",
    "texto": "Peça de reposição"
   }
+ ],
+ "29979281959": [
+  {
+   "emoji": "📏",
+   "titulo": "Tamanhos 8-16mm",
+   "texto": "Variação de comprimento"
+  },
+  {
+   "emoji": "🧰",
+   "titulo": "Kit completo",
+   "texto": "Inclui adesivos e pinças"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Cílios postiços",
+   "texto": "Aplicação faça você mesmo"
+  },
+  {
+   "emoji": "🪞",
+   "titulo": "Uso DIY",
+   "texto": "Para aplicar em casa"
+  }
  ]
 }
