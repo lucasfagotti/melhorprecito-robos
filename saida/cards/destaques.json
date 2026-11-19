@@ -9392,5 +9392,27 @@
    "titulo": "Tampa abridor",
    "texto": "Tampa com função abridor"
   }
+ ],
+ "57814886245": [
+  {
+   "emoji": "🔄",
+   "titulo": "Escova Rotativa",
+   "texto": "Acessório para escova rotativa"
+  },
+  {
+   "emoji": "⚡",
+   "titulo": "Bivolt",
+   "texto": "Compatível com 110V e 220V"
+  },
+  {
+   "emoji": "🧹",
+   "titulo": "Cerdas",
+   "texto": "Cerdas para limpeza"
+  },
+  {
+   "emoji": "🔧",
+   "titulo": "Acessório",
+   "texto": "Peça de reposição"
+  }
  ]
 }
