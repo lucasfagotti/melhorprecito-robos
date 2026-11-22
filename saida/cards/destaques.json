@@ -9590,5 +9590,27 @@
    "titulo": "Promoção",
    "texto": "preço de promoção"
   }
+ ],
+ "21498986253": [
+  {
+   "emoji": "📦",
+   "titulo": "15g",
+   "texto": "pote de 15 gramas"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Fixadora",
+   "texto": "fixa as sobrancelhas"
+  },
+  {
+   "emoji": "❄️",
+   "titulo": "Efeito Frozen",
+   "texto": "acabamento congelado"
+  },
+  {
+   "emoji": "👁️",
+   "titulo": "Para Sobrancelhas",
+   "texto": "uso nas sobrancelhas"
+  }
  ]
 }
