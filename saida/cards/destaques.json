@@ -9700,5 +9700,27 @@
    "titulo": "De mesa portátil",
    "texto": "Compacta para cozinha"
   }
+ ],
+ "23093900302": [
+  {
+   "emoji": "👗",
+   "titulo": "Manga Princesa",
+   "texto": "Manga princesa no modelo"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Tecido Duna",
+   "texto": "Confeccionada em tecido Duna"
+  },
+  {
+   "emoji": "🌷",
+   "titulo": "Cor Tulipa",
+   "texto": "Tonalidade tulipa"
+  },
+  {
+   "emoji": "👚",
+   "titulo": "Blusa Megan",
+   "texto": "Modelo blusa Megan"
+  }
  ]
 }
