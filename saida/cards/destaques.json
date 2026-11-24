@@ -9678,5 +9678,27 @@
    "titulo": "Feminina",
    "texto": "Corte pensado para o corpo feminino"
   }
+ ],
+ "22795030307": [
+  {
+   "emoji": "⚡",
+   "titulo": "Elétrica",
+   "texto": "Funciona na tomada"
+  },
+  {
+   "emoji": "🎛️",
+   "titulo": "Controle de temperatura",
+   "texto": "Ajuste o calor"
+  },
+  {
+   "emoji": "🍖",
+   "titulo": "Grill grelhador",
+   "texto": "Ideal para grelhar"
+  },
+  {
+   "emoji": "🏠",
+   "titulo": "De mesa portátil",
+   "texto": "Compacta para cozinha"
+  }
  ]
 }
