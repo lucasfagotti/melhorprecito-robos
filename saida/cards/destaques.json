@@ -9920,5 +9920,27 @@
    "titulo": "Tamanhos M ao G1",
    "texto": "Disponível do M ao G1"
   }
+ ],
+ "18998327137": [
+  {
+   "emoji": "👖",
+   "titulo": "Modelo Reto",
+   "texto": "Corte reto de alfaiataria"
+  },
+  {
+   "emoji": "🚫",
+   "titulo": "Sem Bolsos",
+   "texto": "Design limpo sem bolsos"
+  },
+  {
+   "emoji": "📏",
+   "titulo": "Cintura Alta",
+   "texto": "Modelagem de cintura alta"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Tecido Premium",
+   "texto": "Tecido de qualidade premium"
+  }
  ]
 }
