@@ -10052,5 +10052,27 @@
    "titulo": "Fixação",
    "texto": "Com elástico"
   }
+ ],
+ "22397100162": [
+  {
+   "emoji": "🎄",
+   "titulo": "Altura 1,20M",
+   "texto": "Tamanho médio para salas"
+  },
+  {
+   "emoji": "✨",
+   "titulo": "Já Decorada",
+   "texto": "Vem com bolinhas e laços"
+  },
+  {
+   "emoji": "💡",
+   "titulo": "Com Pisca",
+   "texto": "Iluminação pisca-pisca inclusa"
+  },
+  {
+   "emoji": "🎁",
+   "titulo": "Pronta para Usar",
+   "texto": "Enfeites já aplicados"
+  }
  ]
 }
