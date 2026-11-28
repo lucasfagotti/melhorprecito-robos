@@ -10096,5 +10096,27 @@
    "titulo": "Kit Completo",
    "texto": "Acompanha gorro e cinto ajustável"
   }
+ ],
+ "23693000500": [
+  {
+   "emoji": "💧",
+   "titulo": "Coleta de água",
+   "texto": "coleta água do degelo"
+  },
+  {
+   "emoji": "♻️",
+   "titulo": "Evaporação",
+   "texto": "recipiente de evaporação"
+  },
+  {
+   "emoji": "🔧",
+   "titulo": "Compatibilidade",
+   "texto": "para geladeira Brastemp Consul"
+  },
+  {
+   "emoji": "🔢",
+   "titulo": "Código do modelo",
+   "texto": "referência 326021045"
+  }
  ]
 }
