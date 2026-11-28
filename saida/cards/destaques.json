@@ -10074,5 +10074,27 @@
    "titulo": "Pronta para Usar",
    "texto": "Enfeites já aplicados"
   }
+ ],
+ "22093559277": [
+  {
+   "emoji": "🎄",
+   "titulo": "Tema Natal",
+   "texto": "Fantasia de vestido natalino"
+  },
+  {
+   "emoji": "🧵",
+   "titulo": "Tecido Veludo",
+   "texto": "Confeccionado em veludo"
+  },
+  {
+   "emoji": "👶",
+   "titulo": "Infantil",
+   "texto": "Tamanho infantil"
+  },
+  {
+   "emoji": "🎩",
+   "titulo": "Kit Completo",
+   "texto": "Acompanha gorro e cinto ajustável"
+  }
  ]
 }
